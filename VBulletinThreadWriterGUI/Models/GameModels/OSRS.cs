@@ -310,228 +310,228 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             return crafting;
         }
 
-        private Skill Farming()
-        {
-            Skill farming = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Farming()
+        //{
+        //    //Skill farming = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return farming;
-        }
+        //    //return farming;
+        //}
 
-        private Skill Firemaking()
-        {
-            Skill firemaking = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
-
-
-
-            return firemaking;
-        }
-
-        private Skill Fishing()
-        {
-            Skill fishing = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Firemaking()
+        //{
+        //    //Skill firemaking = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return fishing;
-        }
+        //    //return firemaking;
+        //}
 
-        private Skill Fletching()
-        {
-            Skill fletching = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
-
-
-
-            return fletching;
-        }
-
-        private Skill Herblore()
-        {
-            Skill herblore = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Fishing()
+        //{
+        //    //Skill fishing = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return herblore;
-        }
+        //    //return fishing;
+        //}
 
-        private Skill Hunter()
-        {
-            Skill hunter = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
-
-
-
-            return hunter;
-        }
-
-        private Skill Magic()
-        {
-            Skill magic = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Fletching()
+        //{
+        //    //Skill fletching = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return magic;
-        }
+        //    //return fletching;
+        //}
 
-        private Skill Melee()
-        {
-            Skill melee = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
-
-
-
-            return melee;
-        }
-
-        private Skill Mining()
-        {
-            Skill mining = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Herblore()
+        //{
+        //    //Skill herblore = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return mining;
-        }
+        //    //return herblore;
+        //}
 
-        private Skill Prayer()
-        {
-            Skill prayer = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
-
-
-
-            return prayer;
-        }
-
-        private Skill Ranged()
-        {
-            Skill ranged = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Hunter()
+        //{
+        //    //Skill hunter = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return ranged;
-        }
+        //    //return hunter;
+        //}
 
-        private Skill Runecrafting()
-        {
-            Skill runecrafting = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
-
-
-
-            return runecrafting;
-        }
-
-        private Skill Slayer()
-        {
-            Skill slayer = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Magic()
+        //{
+        //    //Skill magic = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return slayer;
-        }
+        //    //return magic;
+        //}
 
-        private Skill Smithing()
-        {
-            Skill smithing = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
-
-
-
-            return smithing;
-        }
-
-        private Skill Thieving()
-        {
-            Skill thieving = new Skill()
-            {
-                Name = OSRSSkills.,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Melee()
+        //{
+        //    //Skill melee = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return thieving;
-        }
+        //    //return melee;
+        //}
 
-        private Skill Woodcutting()
-        {
-            Skill woodcutting = new Skill()
-            {
-                Name = OSRSSkills.WOODCUTTING,
-                SkillCapes = new List<Uri> { new Uri("") },
-                SupportType = SupportTypes.
-            };
+        //private Skill Mining()
+        //{
+        //    //Skill mining = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
 
 
 
-            return woodcutting;
-        }
+        //    //return mining;
+        //}
+
+        //private Skill Prayer()
+        //{
+        //    //Skill prayer = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
+
+
+
+        //    //return prayer;
+        //}
+
+        //private Skill Ranged()
+        //{
+        //    //Skill ranged = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
+
+
+
+        //    //return ranged;
+        //}
+
+        //private Skill Runecrafting()
+        //{
+        //    //Skill runecrafting = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
+
+
+
+        //    //return runecrafting;
+        //}
+
+        //private Skill Slayer()
+        //{
+        //    //Skill slayer = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
+
+
+
+        //    //return slayer;
+        //}
+
+        //private Skill Smithing()
+        //{
+        //    //Skill smithing = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
+
+
+
+        //    //return smithing;
+        //}
+
+        //private Skill Thieving()
+        //{
+        //    //Skill thieving = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
+
+
+
+        //    //return thieving;
+        //}
+
+        //private Skill Woodcutting()
+        //{
+        //    //Skill woodcutting = new Skill()
+        //    //{
+        //    //    Name = OSRSSkills.WOODCUTTING,
+        //    //    SkillCapes = new List<Uri> { new Uri("") },
+        //    //    SupportType = SupportTypes.
+        //    //};
+
+
+
+        //    //return woodcutting;
+        //}
     }
 }

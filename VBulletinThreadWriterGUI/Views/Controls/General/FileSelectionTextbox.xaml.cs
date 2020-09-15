@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VBulletinThreadWriterGUI.Controls.General
+namespace VBulletinThreadWriterGUI.Views.Controls.General
 {
     /// <summary>
     /// Interaction logic for FileSelectionTextbox.xaml

@@ -8,15 +8,15 @@ namespace VBulletinThreadWriterGUI.ViewModels
 {
     class SampleViewModel
     {
-        public Car SelectedCar { get; set; }
-        public IEnumerable<Car> Cars
-        {
-            get
-            {
-                var cars = YOUR_DATA_STORE.Cars.ToList();
-                SelectedCar = cars.FirstOrDefault(car => car.Model == "VW");
-                return cars;
-            }
-        }
+        //public Car SelectedCar { get; set; }
+        //public IEnumerable<Car> Cars
+        //{
+        //    get
+        //    {
+        //        var cars = YOUR_DATA_STORE.Cars.ToList();
+        //        SelectedCar = cars.FirstOrDefault(car => car.Model == "VW");
+        //        return cars;
+        //    }
+        //}
     }
 }

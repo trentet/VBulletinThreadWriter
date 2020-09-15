@@ -1,4 +1,5 @@
 ﻿using System;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
 {

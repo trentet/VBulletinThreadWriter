@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VBulletinThreadWriterGUI.Controls.TrainingMethod
+namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
 {
     /// <summary>
     /// Interaction logic for CaveatsAndLimitationsField.xaml

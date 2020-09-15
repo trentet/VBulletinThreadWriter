@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VBulletinThreadWriterGUI"
-        xmlns:tmfc="clr-namespace:VBulletinThreadWriterGUI.Controls.TrainingMethod"
+        xmlns:tmfc="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
         mc:Ignorable="d"
         Title="TrainingMethod" Height="650" Width="450">
     <Grid>

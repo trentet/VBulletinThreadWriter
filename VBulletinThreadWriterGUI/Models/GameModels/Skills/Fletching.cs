@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels.Fields;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
 {
@@ -54,7 +56,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
                 new ScriptExample()
             );
 
-            TrainingMethod stringingBows = new TrainingMethod()
+            TrainingMethodModel stringingBows = new TrainingMethodModel()
             {
                 Name = "Stringing Bows",
                 SupportType = SupportTypes.SUPPORTED,

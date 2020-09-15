@@ -56,152 +56,165 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controls\General\DescriptionField.xaml.cs">
+    <Compile Include="ViewModels\AdditionalSettingsFieldVM.cs" />
+    <Compile Include="ViewModels\CaveatsAndLimitationsFieldVM.cs" />
+    <Compile Include="ViewModels\DescriptionFieldVM.cs" />
+    <Compile Include="ViewModels\InterfaceItemFieldVM.cs" />
+    <Compile Include="ViewModels\InterfaceItemsFieldVM.cs" />
+    <Compile Include="ViewModels\MachineDataFieldVM.cs" />
+    <Compile Include="ViewModels\MapFieldVM.cs" />
+    <Compile Include="ViewModels\NameFieldVM.cs" />
+    <Compile Include="ViewModels\SampleViewModel.cs" />
+    <Compile Include="ViewModels\VisionSystemFieldVM.cs" />
+    <Compile Include="ViewModels\WorldGridFieldVM.cs" />
+    <Compile Include="ViewModels\WorldItemFieldVM.cs" />
+    <Compile Include="ViewModels\WorldItemsFieldVM.cs" />
+    <Compile Include="Views\Controls\General\DescriptionField.xaml.cs">
       <DependentUpon>DescriptionField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\General\FileSelectionTextbox.xaml.cs">
+    <Compile Include="Views\Controls\General\FileSelectionTextbox.xaml.cs">
       <DependentUpon>FileSelectionTextbox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\General\ImageField.xaml.cs">
+    <Compile Include="Views\Controls\General\ImageField.xaml.cs">
       <DependentUpon>ImageField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\General\ImagesField.xaml.cs">
+    <Compile Include="Views\Controls\General\ImagesField.xaml.cs">
       <DependentUpon>ImagesField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\AdditionalSettingsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\AdditionalSettingsField.xaml.cs">
       <DependentUpon>AdditionalSettingsField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\CaveatsAndLimitationsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\CaveatsAndLimitationsField.xaml.cs">
       <DependentUpon>CaveatsAndLimitationsField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\DescriptionField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\DescriptionField.xaml.cs">
       <DependentUpon>DescriptionField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\InterfaceItemField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\InterfaceItemField.xaml.cs">
       <DependentUpon>InterfaceItemField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\InterfaceItemsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\InterfaceItemsField.xaml.cs">
       <DependentUpon>InterfaceItemsField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\MachineDataField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\MachineDataField.xaml.cs">
       <DependentUpon>MachineDataField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\MapField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\MapField.xaml.cs">
       <DependentUpon>MapField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\NameField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\NameField.xaml.cs">
       <DependentUpon>NameField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\VisionSystemField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\VisionSystemField.xaml.cs">
       <DependentUpon>VisionSystemField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\WorldGridField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\WorldGridField.xaml.cs">
       <DependentUpon>WorldGridField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\WorldItemsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\WorldItemsField.xaml.cs">
       <DependentUpon>WorldItemsField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\OSRS.cs" />
-    <Compile Include="Games\Skills\Agility.cs" />
-    <Compile Include="Games\Skills\Construction.cs" />
-    <Compile Include="Games\Skills\Cooking.cs" />
-    <Compile Include="Games\Skills\Crafting.cs" />
-    <Compile Include="Games\Skills\Farming.cs" />
-    <Compile Include="Games\Skills\Firemaking.cs" />
-    <Compile Include="Games\Skills\Fishing.cs" />
-    <Compile Include="Games\Skills\Fletching.cs" />
-    <Compile Include="Games\Skills\Herblore.cs" />
-    <Compile Include="Games\Skills\Hunter.cs" />
-    <Compile Include="Games\Skills\Magic.cs" />
-    <Compile Include="Games\Skills\Melee.cs" />
-    <Compile Include="Games\Skills\Mining.cs" />
-    <Compile Include="Games\Skills\Prayer.cs" />
-    <Compile Include="Games\Skills\Ranged.cs" />
-    <Compile Include="Games\Skills\Runecrafting.cs" />
-    <Compile Include="Games\Skills\Slayer.cs" />
-    <Compile Include="Games\Skills\Smithing.cs" />
-    <Compile Include="Games\Skills\Thieving.cs" />
-    <Compile Include="Games\Skills\Woodcutting.cs" />
-    <Compile Include="Models\AdditionalSettingsSection.cs" />
-    <Compile Include="Models\Game.cs" />
-    <Compile Include="Models\InterfaceItem.cs" />
-    <Compile Include="Models\InterfaceItemSection.cs" />
-    <Compile Include="Models\MachineDataSection.cs" />
-    <Compile Include="Models\MapSection.cs" />
-    <Compile Include="Models\ScriptExample.cs" />
-    <Compile Include="Models\Skill.cs" />
-    <Compile Include="Models\Skills.cs" />
-    <Compile Include="Models\TrainingMethod.cs" />
-    <Compile Include="Models\WorldGridSection.cs" />
-    <Compile Include="Models\WorldItem.cs" />
-    <Compile Include="Models\WorldItemsSection.cs" />
-    <Compile Include="TrainingMethodWindow.xaml.cs">
+    <Compile Include="Models\GameModels\OSRS.cs" />
+    <Compile Include="Models\GameModels\Skills\Agility.cs" />
+    <Compile Include="Models\GameModels\Skills\Construction.cs" />
+    <Compile Include="Models\GameModels\Skills\Cooking.cs" />
+    <Compile Include="Models\GameModels\Skills\Crafting.cs" />
+    <Compile Include="Models\GameModels\Skills\Farming.cs" />
+    <Compile Include="Models\GameModels\Skills\Firemaking.cs" />
+    <Compile Include="Models\GameModels\Skills\Fishing.cs" />
+    <Compile Include="Models\GameModels\Skills\Fletching.cs" />
+    <Compile Include="Models\GameModels\Skills\Herblore.cs" />
+    <Compile Include="Models\GameModels\Skills\Hunter.cs" />
+    <Compile Include="Models\GameModels\Skills\Magic.cs" />
+    <Compile Include="Models\GameModels\Skills\Melee.cs" />
+    <Compile Include="Models\GameModels\Skills\Mining.cs" />
+    <Compile Include="Models\GameModels\Skills\Prayer.cs" />
+    <Compile Include="Models\GameModels\Skills\Ranged.cs" />
+    <Compile Include="Models\GameModels\Skills\Runecrafting.cs" />
+    <Compile Include="Models\GameModels\Skills\Slayer.cs" />
+    <Compile Include="Models\GameModels\Skills\Smithing.cs" />
+    <Compile Include="Models\GameModels\Skills\Thieving.cs" />
+    <Compile Include="Models\GameModels\Skills\Woodcutting.cs" />
+    <Compile Include="Models\TrainingMethodModels\Fields\AdditionalSettingsSection.cs" />
+    <Compile Include="Models\GameModels\Game.cs" />
+    <Compile Include="Models\TrainingMethodModels\InterfaceItem.cs" />
+    <Compile Include="Models\TrainingMethodModels\Fields\InterfaceItemSection.cs" />
+    <Compile Include="Models\TrainingMethodModels\Fields\MachineDataSection.cs" />
+    <Compile Include="Models\TrainingMethodModels\Fields\MapSection.cs" />
+    <Compile Include="Models\TrainingMethodModels\ScriptExample.cs" />
+    <Compile Include="Models\GameModels\Skill.cs" />
+    <Compile Include="Models\GameModels\Skills.cs" />
+    <Compile Include="Models\TrainingMethodModel.cs" />
+    <Compile Include="Models\TrainingMethodModels\Fields\WorldGridSection.cs" />
+    <Compile Include="Models\TrainingMethodModels\WorldItem.cs" />
+    <Compile Include="Models\TrainingMethodModels\Fields\WorldItemsSection.cs" />
+    <Compile Include="Views\TrainingMethodWindow.xaml.cs">
       <DependentUpon>TrainingMethodWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrainingMethod\WorldItemField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\WorldItemField.xaml.cs">
       <DependentUpon>WorldItemField.xaml</DependentUpon>
     </Compile>
-    <Page Include="Controls\General\DescriptionField.xaml">
+    <Page Include="Views\Controls\General\DescriptionField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\General\FileSelectionTextbox.xaml">
+    <Page Include="Views\Controls\General\FileSelectionTextbox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\General\ImageField.xaml">
+    <Page Include="Views\Controls\General\ImageField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\General\ImagesField.xaml">
+    <Page Include="Views\Controls\General\ImagesField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\AdditionalSettingsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\AdditionalSettingsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\CaveatsAndLimitationsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\CaveatsAndLimitationsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\DescriptionField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\DescriptionField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\InterfaceItemField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\InterfaceItemField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\InterfaceItemsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\InterfaceItemsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\MachineDataField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\MachineDataField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\MapField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\MapField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\NameField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\NameField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\VisionSystemField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\VisionSystemField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\WorldGridField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\WorldGridField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\WorldItemsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\WorldItemsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -209,15 +222,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TrainingMethodWindow.xaml">
+    <Page Include="Views\TrainingMethodWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\TrainingMethod\WorldItemField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\WorldItemField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

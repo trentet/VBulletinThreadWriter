@@ -9,6 +9,7 @@
     <RootNamespace>VBulletinThreadWriterGUI</RootNamespace>
     <AssemblyName>VBulletinThreadWriterGUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -100,6 +101,40 @@
     <Compile Include="Controls\TrainingMethod\WorldItemsField.xaml.cs">
       <DependentUpon>WorldItemsField.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Games\OSRS.cs" />
+    <Compile Include="Games\Skills\Agility.cs" />
+    <Compile Include="Games\Skills\Construction.cs" />
+    <Compile Include="Games\Skills\Cooking.cs" />
+    <Compile Include="Games\Skills\Crafting.cs" />
+    <Compile Include="Games\Skills\Farming.cs" />
+    <Compile Include="Games\Skills\Firemaking.cs" />
+    <Compile Include="Games\Skills\Fishing.cs" />
+    <Compile Include="Games\Skills\Fletching.cs" />
+    <Compile Include="Games\Skills\Herblore.cs" />
+    <Compile Include="Games\Skills\Hunter.cs" />
+    <Compile Include="Games\Skills\Magic.cs" />
+    <Compile Include="Games\Skills\Melee.cs" />
+    <Compile Include="Games\Skills\Mining.cs" />
+    <Compile Include="Games\Skills\Prayer.cs" />
+    <Compile Include="Games\Skills\Ranged.cs" />
+    <Compile Include="Games\Skills\Runecrafting.cs" />
+    <Compile Include="Games\Skills\Slayer.cs" />
+    <Compile Include="Games\Skills\Smithing.cs" />
+    <Compile Include="Games\Skills\Thieving.cs" />
+    <Compile Include="Games\Skills\Woodcutting.cs" />
+    <Compile Include="Models\AdditionalSettingsSection.cs" />
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\InterfaceItem.cs" />
+    <Compile Include="Models\InterfaceItemSection.cs" />
+    <Compile Include="Models\MachineDataSection.cs" />
+    <Compile Include="Models\MapSection.cs" />
+    <Compile Include="Models\ScriptExample.cs" />
+    <Compile Include="Models\Skill.cs" />
+    <Compile Include="Models\Skills.cs" />
+    <Compile Include="Models\TrainingMethod.cs" />
+    <Compile Include="Models\WorldGridSection.cs" />
+    <Compile Include="Models\WorldItem.cs" />
+    <Compile Include="Models\WorldItemsSection.cs" />
     <Compile Include="TrainingMethodWindow.xaml.cs">
       <DependentUpon>TrainingMethodWindow.xaml</DependentUpon>
     </Compile>

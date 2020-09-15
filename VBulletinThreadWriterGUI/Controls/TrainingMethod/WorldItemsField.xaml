@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Controls.TrainingMethod"
              mc:Ignorable="d" 
-             d:DesignHeight="56" d:DesignWidth="215">
+             d:DesignHeight="56" d:DesignWidth="74">
     <Grid>
-        <Label Content="World Items" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="215" Height="28"/>
-        <Button Content="+" HorizontalAlignment="Center" Margin="0,28,0,0" VerticalAlignment="Top" Width="28" Height="28"/>
+        <Label Content="World Items" HorizontalContentAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="Auto" Height="28"/>
+        <Button Content="+" Margin="0,28,0,0" VerticalAlignment="Top" Width="28" Height="28"/>
     </Grid>
 </UserControl>

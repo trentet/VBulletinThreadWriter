@@ -1,0 +1,51 @@
+﻿using System;
+
+namespace VBulletinThreadWriterGUI.Games.OSRS.Skills
+{
+    public class Smithing : Skill
+    {
+        public Smithing() :
+            base(
+                OSRSSkills.SMITHING,
+                new Uri("https://i.imgur.com/mr9zT2G.png"),
+                SupportTypes.LIMITED_SUPPORT
+            )
+        {
+            this.TrainingMethods.Add(
+                "Anvil smithing",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            this.TrainingMethods.Add(
+                "Gold bars (Blast Furnace)",
+                SupportTypes.UNKNOWN_SUPPORT,
+                new ScriptExample()
+            );
+
+            this.TrainingMethods.Add(
+                "Blast Furnace",
+                SupportTypes.UNKNOWN_SUPPORT,
+                new ScriptExample()
+            );
+
+            this.TrainingMethods.Add(
+                "Smithing dart tips",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            this.TrainingMethods.Add(
+                "Smithing armour",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            this.TrainingMethods.Add(
+                "Smithing 3-bar rune items",
+                SupportTypes.UNKNOWN_SUPPORT,
+                new ScriptExample()
+            );
+        }
+    }
+}

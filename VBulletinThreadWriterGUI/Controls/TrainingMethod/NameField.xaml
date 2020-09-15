@@ -8,6 +8,6 @@
              d:DesignHeight="28" d:DesignWidth="166">
     <Grid>
         <Label Content="Name" Height="28" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="46,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox Height="28" Margin="46,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
     </Grid>
 </UserControl>

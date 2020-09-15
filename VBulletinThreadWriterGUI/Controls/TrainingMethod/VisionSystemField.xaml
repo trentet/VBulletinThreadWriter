@@ -8,6 +8,6 @@
              d:DesignHeight="28" d:DesignWidth="216">
     <Grid>
         <Label Content="Vision System" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Top" Height="28" Width="120"/>
+        <ComboBox HorizontalAlignment="Right" Margin="96,0,0,0" VerticalAlignment="Top" Height="28" Width="120"/>
     </Grid>
 </UserControl>

@@ -8,27 +8,27 @@
         mc:Ignorable="d"
         Title="TrainingMethod" Height="650" Width="450">
     <Grid>
-        <tmfc:NameField Margin="0,0,0,0"/>
+        <tmfc:NameField Margin="124,0,124,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
-        <tmfc:DescriptionField Margin="0,28,0,0"/>
+        <tmfc:DescriptionField Margin="124,28,123,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
-        <tmfc:VisionSystemField Margin="0,56,0,0"/>
+        <tmfc:VisionSystemField Margin="103,56,103,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
-        <tmfc:CaveatsAndLimitationsField Margin="0,84,0,0"/>
-        
-        <tmfc:AdditionalSettingsField Margin="0,136,0,0"/>
-        
-        <tmfc:WorldGridField Margin="0,224,0,0"/>
-        
-        <tmfc:MapField Margin="0,312,0,0"/>
+        <tmfc:CaveatsAndLimitationsField Margin="102,84,102,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
-        <tmfc:WorldItemsField Margin="0,396,0,0"/>
+        <tmfc:AdditionalSettingsField Margin="113,112,113,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
-        <tmfc:InterfaceItemsField Margin="0,452,0,0"/>
-        
-        <tmfc:MachineDataField Margin="0,508,0,0" />
-        
-        <Button Content="Save" HorizontalAlignment="Left" Margin="73,596,0,0" VerticalAlignment="Top" Width="75"/>
-        
+        <tmfc:WorldGridField Margin="113,224,113,0" VerticalAlignment="Top" HorizontalAlignment="Center" />
+
+        <tmfc:MapField Margin="113,312,113,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        <tmfc:WorldItemsField Margin="184,396,184,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        <tmfc:InterfaceItemsField Margin="177,452,177,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        <tmfc:MachineDataField Margin="113,508,113,0" VerticalAlignment="Top" HorizontalAlignment="Center" />
+
+        <Button Content="Save" Margin="206,592,206,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
     </Grid>
 </Window>

@@ -7,7 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Prayer() :
             base(
-                OSRSSkills.PRAYER,
+                OSRSSkills.OSRSSkillNames.PRAYER.ToDescription(),
                 new Uri("https://i.imgur.com/qeOvWWH.png"),
                 SupportTypes.UNKNOWN_SUPPORT
             )

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels.Fields;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
 {
@@ -23,6 +24,18 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
         public AdditionalSettingsField()
         {
             InitializeComponent();
+        }
+    }
+
+    public class AdditionalSettingsFieldVM
+    {
+        private AdditionalSettingsSection AdditionalSettings { get; set; }
+        public string Description { get => AdditionalSettings.Description; set => AdditionalSettings.Description = value; }
+        public string Image { get => AdditionalSettings.Image != null ? AdditionalSettings.Image.LocalPath : ""; set => AdditionalSettings.Image = new Uri(value); }
+
+        public AdditionalSettingsFieldVM()
+        {
+            //this.AdditionalSettings = new AdditionalSettingsSection(null, "");
         }
     }
 }

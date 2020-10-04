@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 using VBulletinThreadWriterGUI.Models;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels.Fields;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels
 {
@@ -12,25 +13,25 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             this.Skills = new List<Skill>()
             {
                 Agility(),
-                new Skills.Construction(),
-                new Skills.Cooking(),
-                new Skills.Crafting(),
-                new Skills.Farming(),
-                new Skills.Firemaking(),
-                new Skills.Fishing(),
-                new Skills.Fletching(),
-                new Skills.Herblore(),
-                new Skills.Hunter(),
-                new Skills.Magic(),
-                new Skills.Melee(),
-                new Skills.Mining(),
-                new Skills.Prayer(),
-                new Skills.Ranged(),
-                new Skills.Runecrafting(),
-                new Skills.Slayer(),
-                new Skills.Smithing(),
-                new Skills.Thieving(),
-                new Skills.Woodcutting()
+                Construction(),
+                Cooking(),
+                Crafting(),
+                //Farming(),
+                //Firemaking(),
+                //Fishing(),
+                Fletching(),
+                //Herblore(),
+                //Hunter(),
+                //Magic(),
+                //Melee(),
+                //Mining(),
+                //Prayer(),
+                //Ranged(),
+                //Runecrafting(),
+                //Slayer(),
+                //Smithing(),
+                //Thieving(),
+                //Woodcutting()
             };
         }
 
@@ -38,7 +39,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         {
             Skill agility = new Skill()
             {
-                Name = OSRSSkills.AGILITY,
+                Name = OSRSSkills.OSRSSkillNames.AGILITY.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/OhEiD7d.png") },
                 SupportType = SupportTypes.LIMITED_SUPPORT
             };
@@ -146,7 +147,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         {
             Skill construction = new Skill()
             {
-                Name = OSRSSkills.CONSTRUCTION,
+                Name = OSRSSkills.OSRSSkillNames.CONSTRUCTION.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/1tISxly.png") },
                 SupportType = SupportTypes.LIMITED_SUPPORT
             };
@@ -200,7 +201,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         {
             Skill cooking = new Skill()
             {
-                Name = OSRSSkills.COOKING,
+                Name = OSRSSkills.OSRSSkillNames.COOKING.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/4I46Lf9.png") },
                 SupportType = SupportTypes.SUPPORTED
             };
@@ -260,7 +261,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         {
             Skill crafting = new Skill()
             {
-                Name = OSRSSkills.CRAFTING,
+                Name = OSRSSkills.OSRSSkillNames.CRAFTING.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/FZYrvzH.png") },
                 SupportType = SupportTypes.SUPPORTED
             };
@@ -314,12 +315,10 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill farming = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
-
-
 
         //    //return farming;
         //}
@@ -328,7 +327,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill firemaking = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -342,7 +341,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill fishing = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -352,25 +351,134 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //    //return fishing;
         //}
 
-        //private Skill Fletching()
-        //{
-        //    //Skill fletching = new Skill()
-        //    //{
-        //    //    Name = OSRSSkills.,
-        //    //    SkillCapes = new List<Uri> { new Uri("") },
-        //    //    SupportType = SupportTypes.
-        //    //};
+        private Skill Fletching()
+        {
+            Skill fletching = new Skill()
+            {
+                Name = OSRSSkills.OSRSSkillNames.FLETCHING.ToDescription(),
+                SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/hKurFob.png") },
+                SupportType = SupportTypes.SUPPORTED
+            };
 
+            fletching.TrainingMethods.Add(
+                "Darts",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
 
+            fletching.TrainingMethods.Add(
+                "Bolts",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
 
-        //    //return fletching;
-        //}
+            fletching.TrainingMethods.Add(
+                "Tipping Bolts",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            fletching.TrainingMethods.Add(
+                "Arrows",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            fletching.TrainingMethods.Add(
+                "Javelins",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            fletching.TrainingMethods.Add(
+                "Arrow Shafts",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            fletching.TrainingMethods.Add(
+                "Unstrung Bows",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            TrainingMethodModel stringingBows = new TrainingMethodModel()
+            {
+                Name = "Stringing Bows",
+                SupportType = SupportTypes.SUPPORTED,
+            };
+
+            stringingBows.ScriptExample = new ScriptExample()
+            {
+                VisionSystem = "Automatic, Shape-based recommended",
+                CaveatsAndLimitations = "Solid world item highlighting with RuneLitePlus recommended.",
+                Description = "Stringing Yew Longbows at Varrock West bank using '1' key for the Make X menu selection and bank left-click withdraw X set to 14.",
+                AdditionalSettingsSection =
+                    new AdditionalSettingsSection(
+                        new Uri("https://i.imgur.com/IzThAK9.png")
+                    ),
+                WorldGridSection =
+                    new WorldGridSection(
+                        new Uri("https://i.imgur.com/BnOpXpv.png")
+                    ),
+                MapSection =
+                    new MapSection(
+                        new Uri("https://i.imgur.com/uNIG87c.png"),
+                        "No navigation necessary. Standing one tile west of the south-most bank booth in Varrock West Bank."
+                    ),
+                WorldItemsSection =
+                    new WorldItemsSection(
+                        new WorldItem(
+                            new Uri("https://i.imgur.com/BnOpXpv.png"),
+                            "South-most bank booth in Varrock West Bank, solid cyan overlay using RuneLitePlus."
+                        )
+                    ),
+                InterfaceItemsSection =
+                    new InterfaceItemsSection(
+                        new List<InterfaceItem>
+                        {
+                            new InterfaceItem(
+                                new Uri("https://i.imgur.com/R0xt50s.png"),
+                                "Yew Longbow"
+                            ),
+                            new InterfaceItem(
+                                new Uri("https://i.imgur.com/wxvm1F8.png"),
+                                "Bow string"
+                            ),
+                            new InterfaceItem(
+                                new Uri("https://i.imgur.com/G0Ze7Pj.png"),
+                                "Yew Longbow (u)"
+                            ),
+                        }
+                    ),
+                MachineDataSection =
+                    new MachineDataSection(
+                        new Uri("https://i.imgur.com/PpmvGXL.png")
+                    )
+            };
+
+            fletching.TrainingMethods.Add(stringingBows);
+
+            fletching.TrainingMethods.Add(
+                "Battlestaves",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            fletching.TrainingMethods.Add(
+                "Redwood Shields",
+                SupportTypes.SUPPORTED,
+                new ScriptExample()
+            );
+
+            return fletching;
+        }
 
         //private Skill Herblore()
         //{
         //    //Skill herblore = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -384,7 +492,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill hunter = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -398,7 +506,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill magic = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -412,7 +520,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill melee = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -426,7 +534,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill mining = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -440,7 +548,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill prayer = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -454,7 +562,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill ranged = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -468,7 +576,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill runecrafting = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -482,7 +590,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill slayer = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -496,7 +604,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill smithing = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -510,7 +618,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill thieving = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.,
+        //    //    Name = OSRSSkills.OSRSSkillNames.,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};
@@ -524,7 +632,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         //{
         //    //Skill woodcutting = new Skill()
         //    //{
-        //    //    Name = OSRSSkills.WOODCUTTING,
+        //    //    Name = OSRSSkills.OSRSSkillNames.WOODCUTTING,
         //    //    SkillCapes = new List<Uri> { new Uri("") },
         //    //    SupportType = SupportTypes.
         //    //};

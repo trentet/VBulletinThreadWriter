@@ -9,7 +9,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
     {
         public string Name { get; set; }
         public SupportTypes? SupportType { get; set; }
-        public List<TrainingMethodModel>? TrainingMethods { get; set; }
+        public List<TrainingMethodModel> TrainingMethods { get; set; }
         public List<Uri> SkillCapes { get; set; }
 
         public Skill()
@@ -25,7 +25,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             this.Name = name;
             this.SkillCapes = skillCapes;
             this.SupportType = null;
-            this.TrainingMethods = null;
+            this.TrainingMethods = new List<TrainingMethodModel>();
         }
 
         public Skill(string name, Uri skillCape)
@@ -33,7 +33,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             this.Name = name;
             this.SkillCapes = new List<Uri> { skillCape };
             this.SupportType = null;
-            this.TrainingMethods = null;
+            this.TrainingMethods = new List<TrainingMethodModel>();
         }
 
         public Skill(string name, List<Uri> skillCapes, SupportTypes supportType)

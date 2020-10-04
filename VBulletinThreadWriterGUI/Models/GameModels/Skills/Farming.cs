@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
@@ -7,8 +8,8 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Farming() :
             base(
-                OSRSSkills.FARMING,
-                new Uri("https://i.imgur.com/e4sqLSj.png"),
+                OSRSSkills.OSRSSkillNames.FARMING.ToDescription(),
+                new List<Uri> { new Uri("https://i.imgur.com/e4sqLSj.png") },
                 SupportTypes.UNSUPPORTED
             )
         {

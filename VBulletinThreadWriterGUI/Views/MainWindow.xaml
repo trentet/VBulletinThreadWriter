@@ -4,22 +4,45 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VBulletinThreadWriterGUI"
+        xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="450
-        ">
+        Title="MainWindow" Height="600" Width="450">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="251*"/>
-            <ColumnDefinition Width="191*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="Skill Section" HorizontalAlignment="Left" Margin="53,27,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="155,31,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-        <Label Content="Game" HorizontalAlignment="Left" Margin="53,1,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="155,5,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="35.974,5,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="35.974,33,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1"/>
-        <Label Content="Training Method" HorizontalAlignment="Left" Margin="53,53,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="155,58,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="35.974,60,0,0" VerticalAlignment="Top" Width="20" Grid.Column="1"/>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <general:ComboBoxField
+                    x:Name="GameField" 
+                    FieldName="Game"
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Center"
+                    FieldHeight="28"
+                    FieldComboBoxWidth="150"
+                    Width="Auto"/>
+                <Button Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Grid.Column="1"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <general:ComboBoxField
+                    x:Name="SkillField" 
+                    FieldName="Skill"
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Center"
+                    FieldHeight="28"
+                    FieldComboBoxWidth="150"
+                    Width="Auto"/>
+                <Button Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Grid.Column="1"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <general:ComboBoxField
+                    x:Name="TrainingMethodField" 
+                    FieldName="Training Method"
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Center"
+                    FieldHeight="28"
+                    FieldComboBoxWidth="150"
+                    Width="Auto"/>
+                <Button Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Grid.Column="1"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

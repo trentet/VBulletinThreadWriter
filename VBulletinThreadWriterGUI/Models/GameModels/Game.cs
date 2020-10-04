@@ -1,7 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels
 {
+    public enum Games 
+    { 
+        [Description("OSRS")]
+        OSRS,
+        [Description("RS3")]
+        RS3
+    }
+
     public class Game
     {
         public string Title { get; set; }

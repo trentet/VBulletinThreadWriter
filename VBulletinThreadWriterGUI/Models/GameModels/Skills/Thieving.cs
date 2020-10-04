@@ -7,7 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Thieving() :
             base(
-                OSRSSkills.THIEVING,
+                OSRSSkills.OSRSSkillNames.THIEVING.ToDescription(),
                 new Uri("https://i.imgur.com/sv53tf1.png"),
                 SupportTypes.VERY_LIMITED_SUPPORT
             )

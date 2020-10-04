@@ -9,7 +9,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Fletching() :
             base(
-                OSRSSkills.FLETCHING,
+                OSRSSkills.OSRSSkillNames.FLETCHING.ToDescription(),
                 new Uri("https://i.imgur.com/hKurFob.png"),
                 SupportTypes.SUPPORTED
             )

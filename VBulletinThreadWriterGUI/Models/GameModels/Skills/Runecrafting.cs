@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
@@ -7,8 +8,8 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Runecrafting() :
             base(
-                OSRSSkills.RUNECRAFTING,
-                new Uri("https://i.imgur.com/tE9I9h8.png"),
+                OSRSSkills.OSRSSkillNames.RUNECRAFTING.ToDescription(),
+                new List<Uri> { new Uri("https://i.imgur.com/tE9I9h8.png") },
                 SupportTypes.UNKNOWN_SUPPORT
             )
         {

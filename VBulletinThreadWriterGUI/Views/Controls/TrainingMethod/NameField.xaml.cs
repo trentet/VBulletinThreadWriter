@@ -25,7 +25,7 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        public class NameFieldVM
         {
 
         }

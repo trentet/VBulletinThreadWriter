@@ -7,7 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Fishing() :
             base(
-                OSRSSkills.FISHING,
+                OSRSSkills.OSRSSkillNames.FISHING.ToDescription(),
                 new Uri("https://i.imgur.com/H4NQkul.png"),
                 SupportTypes.VERY_LIMITED_SUPPORT
             )

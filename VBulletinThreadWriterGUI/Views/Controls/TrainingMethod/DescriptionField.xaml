@@ -5,9 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
              xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
-             mc:Ignorable="d" 
-             d:DesignHeight="28" d:DesignWidth="166">
+             mc:Ignorable="d">
     <Grid>
-        <general:DescriptionField Margin="0,0,0,0"/>
+        <general:TextBoxField FieldHeight=""/>
     </Grid>
 </UserControl>

@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.General.PrefixTextBoxField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              mc:Ignorable="d">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Width="Auto">
+            <Label 
+                x:Name="FieldLabel" 
+                Content="{Binding FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+            <Label 
+                x:Name="FieldPrefixLabel" 
+                Content="{Binding FieldPrefixName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+            <TextBox 
+                x:Name="FieldTextBox"
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                Text="{Binding FieldText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                Width="{Binding FieldTextBoxWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

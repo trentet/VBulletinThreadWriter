@@ -7,7 +7,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="28" d:DesignWidth="215">
     <Grid>
-        <Label Content="Image" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
-        <local:FileSelectionTextbox Margin="75,0,0,0"/>
+        <StackPanel Orientation="Horizontal">
+            <Label 
+                Content="Image" 
+                Height="28"/>
+            <local:FileSelectionTextBox 
+                FieldTextBoxText=""
+                FieldHeight="28" 
+                FieldTextBoxWidth="150"
+                FieldButtonText="..."
+                FieldButtonWidth="20"/>
+        </StackPanel>
     </Grid>
 </UserControl>

@@ -24,5 +24,10 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
         {
             InitializeComponent();
         }
+
+        public class CaveatsAndLimitationsFieldVM
+        {
+
+        }
     }
 }

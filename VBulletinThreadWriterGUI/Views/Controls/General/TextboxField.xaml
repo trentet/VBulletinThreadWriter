@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.General.FileSelectionTextBox"
+﻿<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.General.TextBoxField"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,18 +6,17 @@
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
              mc:Ignorable="d">
     <Grid>
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Width="Auto">
+            <Label 
+                x:Name="FieldLabel" 
+                Content="{Binding FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
             <TextBox 
                 x:Name="FieldTextBox"
-                Text="{Binding FieldTextBoxText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                 Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                Text="{Binding FieldText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
                 Width="{Binding FieldTextBoxWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                TextWrapping="Wrap" />
-            <Button 
-                x:Name="FieldButton"
-                Content="{Binding FieldButtonText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                Width="{Binding FieldButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+                TextWrapping="Wrap"/>
         </StackPanel>
     </Grid>
 </UserControl>

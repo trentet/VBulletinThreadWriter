@@ -8,7 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="56" d:DesignWidth="215">
     <Grid Margin="0,0,0,0">
-        <general:DescriptionField Margin="0,0,0,0"/>
+        <general:TextBoxField Margin="0,0,0,0"/>
         <general:ImagesField Margin="0,28,0,0"/>
     </Grid>
 </UserControl>

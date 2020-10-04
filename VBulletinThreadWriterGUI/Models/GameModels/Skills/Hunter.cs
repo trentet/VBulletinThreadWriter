@@ -7,7 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Hunter() :
             base(
-                OSRSSkills.HUNTER,
+                OSRSSkills.OSRSSkillNames.HUNTER.ToDescription(),
                 new Uri("https://i.imgur.com/oiO9Q3p.png"),
                 SupportTypes.UNSUPPORTED
             )

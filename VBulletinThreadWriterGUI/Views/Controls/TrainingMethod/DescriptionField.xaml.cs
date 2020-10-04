@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VBulletinThreadWriterGUI.Views.Controls.General;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
 {
@@ -23,6 +24,11 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
         public DescriptionField()
         {
             InitializeComponent();
+        }
+
+        public class DescriptionFieldVM
+        {
+
         }
     }
 }

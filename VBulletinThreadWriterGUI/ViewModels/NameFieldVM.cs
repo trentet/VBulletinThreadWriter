@@ -6,8 +6,5 @@ using System.Threading.Tasks;
 
 namespace VBulletinThreadWriterGUI.ViewModels
 {
-    public class NameFieldVM
-    {
-
-    }
+    
 }

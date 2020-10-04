@@ -7,7 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Woodcutting() :
             base(
-                OSRSSkills.WOODCUTTING,
+                OSRSSkills.OSRSSkillNames.WOODCUTTING.ToDescription(),
                 new Uri("https://i.imgur.com/pBBoLBp.png"),
                 SupportTypes.LIMITED_SUPPORT
             )

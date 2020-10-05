@@ -88,37 +88,40 @@
     <Compile Include="Views\Controls\General\TextboxField.xaml.cs">
       <DependentUpon>TextboxField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\AdditionalSettingsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\ScriptExampleView.xaml.cs">
+      <DependentUpon>ScriptExampleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\AdditionalSettingsField.xaml.cs">
       <DependentUpon>AdditionalSettingsField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\CaveatsAndLimitationsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\CaveatsAndLimitationsField.xaml.cs">
       <DependentUpon>CaveatsAndLimitationsField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\DescriptionField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\DescriptionField.xaml.cs">
       <DependentUpon>DescriptionField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\InterfaceItemField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemField.xaml.cs">
       <DependentUpon>InterfaceItemField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\InterfaceItemsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemsField.xaml.cs">
       <DependentUpon>InterfaceItemsField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\MachineDataField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MachineDataField.xaml.cs">
       <DependentUpon>MachineDataField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\MapField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MapField.xaml.cs">
       <DependentUpon>MapField.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Controls\TrainingMethod\NameField.xaml.cs">
       <DependentUpon>NameField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\VisionSystemField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\VisionSystemField.xaml.cs">
       <DependentUpon>VisionSystemField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\WorldGridField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldGridField.xaml.cs">
       <DependentUpon>WorldGridField.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\WorldItemsField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldItemsField.xaml.cs">
       <DependentUpon>WorldItemsField.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\GameModels\OSRS.cs" />
@@ -161,7 +164,7 @@
     <Compile Include="Views\TrainingMethodWindow.xaml.cs">
       <DependentUpon>TrainingMethodWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\WorldItemField.xaml.cs">
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldItemField.xaml.cs">
       <DependentUpon>WorldItemField.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Controls\General\ComboBoxField.xaml">
@@ -184,31 +187,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\AdditionalSettingsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\ScriptExampleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\CaveatsAndLimitationsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\AdditionalSettingsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\DescriptionField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\CaveatsAndLimitationsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\InterfaceItemField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\DescriptionField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\InterfaceItemsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\MachineDataField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\MapField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MachineDataField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MapField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -216,15 +223,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\VisionSystemField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\VisionSystemField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\WorldGridField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldGridField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\WorldItemsField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldItemsField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -248,7 +255,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\TrainingMethod\WorldItemField.xaml">
+    <Page Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldItemField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

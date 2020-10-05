@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 
-namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
-{
+namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields{
     /// <summary>
     /// Interaction logic for WorldItemField.xaml
     /// </summary>
@@ -23,6 +23,22 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
         public WorldItemField()
         {
             InitializeComponent();
+        }
+    }
+
+    public class WorldItemFieldVM
+    {
+        public WorldItem WorldItem { get; set; }
+        public string Description
+        {
+            get => WorldItem.Description;
+            set => WorldItem.Description = value;
+        }
+
+        public string Image
+        {
+            get => WorldItem.Image != null ? WorldItem.Image.LocalPath : "";
+            set => WorldItem.Image = new Uri(value);
         }
     }
 }

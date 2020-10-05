@@ -15,79 +15,79 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Fly Fishing",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Drift Net Fishing",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Barbarian Fishing",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "2-Tick Harpooning Swordfish/Tuna",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Aerial Fishing",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Monkfish",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Karambwan",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Swordfish/Tuna",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Infernal Eel",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Minnow",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Anglerfish",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Dark Crabs",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Sacred Eel",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

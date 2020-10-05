@@ -15,79 +15,79 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Superheat",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Camelot Teleport",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "High Alchemy",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Magic Imbue",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Enchant Crossbow Bolts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Enchant Jewelery",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Tele-alching",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Charging Orbs",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Tan Leather",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Stun-alching",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "String Jewelry",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Plank Make",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Superglass Make",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

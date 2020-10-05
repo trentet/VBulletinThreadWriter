@@ -8,7 +8,7 @@ namespace VBulletinThreadWriterGUI.Models
     {
         public string Name { get; set; }
         public SupportTypes? SupportType { get; set; }
-        public ScriptExample ScriptExample { get; set; }
+        public ScriptExampleModel ScriptExample { get; set; }
 
         public TrainingMethodModel()
         {
@@ -31,7 +31,7 @@ namespace VBulletinThreadWriterGUI.Models
             this.ScriptExample = null;
         }
 
-        public TrainingMethodModel(string name, SupportTypes supportType, ScriptExample scriptExample)
+        public TrainingMethodModel(string name, SupportTypes supportType, ScriptExampleModel scriptExample)
         {
             this.Name = name;
             this.SupportType = supportType;
@@ -45,7 +45,7 @@ namespace VBulletinThreadWriterGUI.Models
             this List<TrainingMethodModel> trainingMethods, 
             string name, 
             SupportTypes supportType, 
-            ScriptExample scriptExample
+            ScriptExampleModel scriptExample
         )
         {
             trainingMethods.Add(new TrainingMethodModel(name, supportType, scriptExample));

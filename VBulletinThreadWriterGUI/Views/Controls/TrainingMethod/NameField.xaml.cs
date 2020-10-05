@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VBulletinThreadWriterGUI.Models;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
 {
@@ -24,10 +25,16 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
         {
             InitializeComponent();
         }
+    }
 
-        public class NameFieldVM
+    public class NameFieldVM
+    {
+        public TrainingMethodModel TrainingMethodModel { get; set; }
+        public string Name { get => TrainingMethodModel.Name; set => TrainingMethodModel.Name = value; }
+
+        public NameFieldVM(TrainingMethodModel trainingMethodModel)
         {
-
+            this.TrainingMethodModel = trainingMethodModel;
         }
     }
 }

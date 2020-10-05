@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 
-namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
-{
+namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields{
     /// <summary>
     /// Interaction logic for InterfaceItemsField.xaml
     /// </summary>
@@ -28,6 +28,17 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
 
     public class InterfaceItemFieldVM
     {
+        public InterfaceItem InterfaceItem { get; set; }
+        public string Description
+        {
+            get => InterfaceItem.Description;
+            set => InterfaceItem.Description = value;
+        }
 
+        public string Image
+        {
+            get => InterfaceItem.Image != null ? InterfaceItem.Image.LocalPath : "";
+            set => InterfaceItem.Image = new Uri(value);
+        }
     }
 }

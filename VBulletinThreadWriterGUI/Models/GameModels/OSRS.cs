@@ -47,97 +47,97 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             agility.TrainingMethods.Add(
                 "Gnome Stronghold Agility Course",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Draynor Village Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Al Kharid Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Werewolf Skullball",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Varrock Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Canifis Rooftop Course",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Ape Atoll Agility Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Falador Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Wilderness Agility Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Werewolf Agility Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Seers' Village Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Pollnivneach Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Prifddinas Agility Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Relleka Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Brimhaven Agility Arena",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             agility.TrainingMethods.Add(
                 "Ardougne Rooftop Course",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             return agility;
@@ -155,43 +155,43 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             construction.TrainingMethods.Add(
                 "Oak Larders",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             construction.TrainingMethods.Add(
                 "Mahogany Tables",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             construction.TrainingMethods.Add(
                 "Gnome benches",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             construction.TrainingMethods.Add(
                 "Mounted Mythical Capes",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             construction.TrainingMethods.Add(
                 "Teak Garden Benches",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             construction.TrainingMethods.Add(
                 "Carved Teak Magic Wardrobes",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             construction.TrainingMethods.Add(
                 "Oak Dungeon Doors",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             return construction;
@@ -209,49 +209,49 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             cooking.TrainingMethods.Add(
                 "Jugs of Wine",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             cooking.TrainingMethods.Add(
                 "Myths' Guild",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             cooking.TrainingMethods.Add(
                 "Rogues' Den",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             cooking.TrainingMethods.Add(
                 "Cook's Guild",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             cooking.TrainingMethods.Add(
                 "Hosidius Clay Oven",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             cooking.TrainingMethods.Add(
                 "Wintertodt Bonfire",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             cooking.TrainingMethods.Add(
                 "Catherby",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             cooking.TrainingMethods.Add(
                 "Lumbridge Castle",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             return cooking;
@@ -269,43 +269,43 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             crafting.TrainingMethods.Add(
                 "Cutting Gems",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             crafting.TrainingMethods.Add(
                 "Battlestaves",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             crafting.TrainingMethods.Add(
                 "D'hide Bodies",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             crafting.TrainingMethods.Add(
                 "Gold Bracelets",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             crafting.TrainingMethods.Add(
                 "Glassblowing Molten Glass",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             crafting.TrainingMethods.Add(
                 "Casting Superglass Make",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             crafting.TrainingMethods.Add(
                 "Cutting Amethyst",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             return crafting;
@@ -363,43 +363,43 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             fletching.TrainingMethods.Add(
                 "Darts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             fletching.TrainingMethods.Add(
                 "Bolts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             fletching.TrainingMethods.Add(
                 "Tipping Bolts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             fletching.TrainingMethods.Add(
                 "Arrows",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             fletching.TrainingMethods.Add(
                 "Javelins",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             fletching.TrainingMethods.Add(
                 "Arrow Shafts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             fletching.TrainingMethods.Add(
                 "Unstrung Bows",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             TrainingMethodModel stringingBows = new TrainingMethodModel()
@@ -408,9 +408,9 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
                 SupportType = SupportTypes.SUPPORTED,
             };
 
-            stringingBows.ScriptExample = new ScriptExample()
+            stringingBows.ScriptExample = new ScriptExampleModel()
             {
-                VisionSystem = "Automatic, Shape-based recommended",
+                VisionSystem = VisionSystems.SHAPE,
                 CaveatsAndLimitations = "Solid world item highlighting with RuneLitePlus recommended.",
                 Description = "Stringing Yew Longbows at Varrock West bank using '1' key for the Make X menu selection and bank left-click withdraw X set to 14.",
                 AdditionalSettingsSection =
@@ -462,13 +462,13 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
             fletching.TrainingMethods.Add(
                 "Battlestaves",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             fletching.TrainingMethods.Add(
                 "Redwood Shields",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             return fletching;

@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 using VBulletinThreadWriterGUI.Views.Controls.General;
 
-namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
-{
+namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields{
     /// <summary>
     /// Interaction logic for DescriptionField.xaml
     /// </summary>
@@ -25,10 +25,16 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
         {
             InitializeComponent();
         }
+    }
 
-        public class DescriptionFieldVM
+    public class DescriptionFieldVM
+    {
+        public ScriptExampleModel ScriptExample { get; set; }
+        public string Description { get => ScriptExample.Description; set => ScriptExample.Description = value; }
+
+        public DescriptionFieldVM(ScriptExampleModel scriptExample)
         {
-
+            this.ScriptExample = scriptExample;
         }
     }
 }

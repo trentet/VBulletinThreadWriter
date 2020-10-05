@@ -15,37 +15,37 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Anvil smithing",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Gold bars (Blast Furnace)",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Blast Furnace",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Smithing dart tips",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Smithing armour",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Smithing 3-bar rune items",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

@@ -15,43 +15,43 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Powermining Iron Ore",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Powermining Granite",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Motherload Mode",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Powermining Gem Rocks",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Volcanic Mine",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Blast Mine",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Powermining Amethyst",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

@@ -15,121 +15,121 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Bird House Trapping",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Feldip Weasels",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Sandworms",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Ruby Harvests + Copper Longtails",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Swamp Lizards",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Falconry",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Red Salamanders",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Black Salamanders",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Black Chinchompas",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Crimson Swifts",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Copper Longtails",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Cerulean Twitches",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Ferrets",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Tropical Wagtails",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Aerial Fishing",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Prickly Kebbits",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Orange Salamanders",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Maniacal Monkeys",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Carnivorous Chinchompas",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Herbiboars",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

@@ -1,10 +1,19 @@
-﻿using VBulletinThreadWriterGUI.Models.TrainingMethodModels.Fields;
+﻿using System.ComponentModel;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels.Fields;
 
 namespace VBulletinThreadWriterGUI.Models.TrainingMethodModels
 {
-    public class ScriptExample
+    public enum VisionSystems
     {
-        public string VisionSystem { get; set; }
+        [Description("Color (Manual)")]
+        COLOR,
+        [Description("Shape (Automatic)")]
+        SHAPE
+    }
+
+    public class ScriptExampleModel
+    {
+        public VisionSystems? VisionSystem { get; set; }
         public string CaveatsAndLimitations { get; set; }
         public string Description { get; set; }
         public AdditionalSettingsSection AdditionalSettingsSection { get; set; }
@@ -14,13 +23,13 @@ namespace VBulletinThreadWriterGUI.Models.TrainingMethodModels
         public InterfaceItemsSection InterfaceItemsSection { get; set; }
         public MachineDataSection MachineDataSection { get; set; }
 
-        public ScriptExample()
+        public ScriptExampleModel()
         {
 
         }
 
-        public ScriptExample(
-            string visionSystem,
+        public ScriptExampleModel(
+            VisionSystems visionSystem,
             string caveatsAndLimitations,
             string description,
             AdditionalSettingsSection additionalSettings,

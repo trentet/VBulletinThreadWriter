@@ -15,19 +15,19 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Gilded Altar",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Chaos Altar",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Reanimating Ensouled Heads",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

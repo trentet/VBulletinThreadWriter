@@ -16,13 +16,13 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Tree runs",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Herb Runs",
                 SupportTypes.UNSUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

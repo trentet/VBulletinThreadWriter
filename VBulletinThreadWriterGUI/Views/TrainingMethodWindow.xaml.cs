@@ -1,32 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using VBulletinThreadWriterGUI.Models;
+using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod;
+using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample;
+using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields;
 
 namespace VBulletinThreadWriterGUI
 {
     /// <summary>
-    /// Interaction logic for TrainingMethod.xaml
+    /// Interaction logic for TrainingMethodWindow.xaml
     /// </summary>
-    public partial class TrainingMethod : Window
+    public partial class TrainingMethodWindow : Window
     {
-        public TrainingMethod()
+        public static TrainingMethodModel TrainingMethodModel { get; set; }
+        
+        public static NameFieldVM NameFieldViewModel = new NameFieldVM(TrainingMethodModel);
+
+        public static ScriptExampleVM ScriptExampleViewModel = new ScriptExampleVM(TrainingMethodModel.ScriptExample);
+        
+        public TrainingMethodWindow()
         {
             InitializeComponent();
-        }
-
-        private void MapField_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

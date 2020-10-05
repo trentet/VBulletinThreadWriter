@@ -15,19 +15,19 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Making Potions",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Making Tar",
                 SupportTypes.UNKNOWN_SUPPORT,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Herb Cleaning",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

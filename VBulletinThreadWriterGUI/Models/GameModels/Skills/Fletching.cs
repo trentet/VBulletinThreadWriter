@@ -17,43 +17,43 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Darts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Bolts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Tipping Bolts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Arrows",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Javelins",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Arrow Shafts",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Unstrung Bows",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             TrainingMethodModel stringingBows = new TrainingMethodModel()
@@ -62,9 +62,9 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
                 SupportType = SupportTypes.SUPPORTED,
             };
 
-            stringingBows.ScriptExample = new ScriptExample()
+            stringingBows.ScriptExample = new ScriptExampleModel()
             {
-                VisionSystem = "Automatic, Shape-based recommended",
+                VisionSystem = VisionSystems.SHAPE,
                 CaveatsAndLimitations = "Solid world item highlighting with RuneLitePlus recommended.",
                 Description = "Stringing Yew Longbows at Varrock West bank using '1' key for the Make X menu selection and bank left-click withdraw X set to 14.",
                 AdditionalSettingsSection =
@@ -116,13 +116,13 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
             this.TrainingMethods.Add(
                 "Battlestaves",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
 
             this.TrainingMethods.Add(
                 "Redwood Shields",
                 SupportTypes.SUPPORTED,
-                new ScriptExample()
+                new ScriptExampleModel()
             );
         }
     }

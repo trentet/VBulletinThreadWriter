@@ -12,9 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VBulletinThreadWriterGUI.Models;
+using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 
-namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
-{
+namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields{
     /// <summary>
     /// Interaction logic for CaveatsAndLimitationsField.xaml
     /// </summary>
@@ -24,10 +25,16 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
         {
             InitializeComponent();
         }
+    }
 
-        public class CaveatsAndLimitationsFieldVM
+    public class CaveatsAndLimitationsFieldVM
+    {
+        public ScriptExampleModel ScriptExample { get; set; }
+        public string Text { get => ScriptExample.CaveatsAndLimitations; set => ScriptExample.CaveatsAndLimitations = value; }
+
+        public CaveatsAndLimitationsFieldVM(ScriptExampleModel scriptExample)
         {
-
+            this.ScriptExample = scriptExample;
         }
     }
 }

@@ -1,36 +1,18 @@
-﻿<Window x:Class="VBulletinThreadWriterGUI.TrainingMethod"
+﻿<Window x:Class="VBulletinThreadWriterGUI.TrainingMethodWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
-        xmlns:tmfc="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
+        xmlns:trainingMethod="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
+        xmlns:scriptExample="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample"
         mc:Ignorable="d"
         Title="TrainingMethod" Height="650" Width="450">
     <Grid>
-        <StackPanel Orientation="Vertical">
-            <tmfc:NameField HorizontalAlignment="Center"/>
-
-            <general:TextBoxField
-                x:Name="DescriptionField" HorizontalAlignment="Center"/>
-
-            <tmfc:VisionSystemField HorizontalAlignment="Center"/>
-
-            <tmfc:CaveatsAndLimitationsField HorizontalAlignment="Center"/>
-
-            <tmfc:AdditionalSettingsField HorizontalAlignment="Center"/>
-
-            <tmfc:WorldGridField HorizontalAlignment="Center" />
-
-            <tmfc:MapField HorizontalAlignment="Center"/>
-
-            <tmfc:WorldItemsField HorizontalAlignment="Center"/>
-
-            <tmfc:InterfaceItemsField HorizontalAlignment="Center"/>
-
-            <tmfc:MachineDataField HorizontalAlignment="Center" />
-
-            <Button Content="Save" HorizontalAlignment="Center"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+            <trainingMethod:NameField/>
+            <scriptExample:ScriptExampleView/>
+            <Button Content="Save"/>
         </StackPanel>
     </Grid>
 </Window>

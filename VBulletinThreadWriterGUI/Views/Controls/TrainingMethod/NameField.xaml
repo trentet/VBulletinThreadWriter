@@ -4,10 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
-             mc:Ignorable="d" 
-             d:DesignHeight="28" d:DesignWidth="166">
+             xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
+             mc:Ignorable="d">
     <Grid>
-        <Label Content="Name" Height="28" VerticalAlignment="Top"/>
-        <TextBox Height="28" Margin="46,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <general:TextBoxField
+            x:Name="NameFieldTextBox"
+            FieldHeight="28"
+            FieldName="Name"
+            FieldText=""
+            FieldTextBoxWidth="120"/>
     </Grid>
 </UserControl>

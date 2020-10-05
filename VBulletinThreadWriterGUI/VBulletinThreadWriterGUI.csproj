@@ -79,11 +79,8 @@
     <Compile Include="Views\Controls\General\FileSelectionTextBox.xaml.cs">
       <DependentUpon>FileSelectionTextBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\General\ImageField.xaml.cs">
-      <DependentUpon>ImageField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\General\ImagesField.xaml.cs">
-      <DependentUpon>ImagesField.xaml</DependentUpon>
+    <Compile Include="Views\Controls\General\FileSelectionTextBoxField.xaml.cs">
+      <DependentUpon>FileSelectionTextBoxField.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Controls\General\PrefixTextBoxField.xaml.cs">
       <DependentUpon>PrefixTextBoxField.xaml</DependentUpon>
@@ -175,11 +172,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Controls\General\ImageField.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Controls\General\ImagesField.xaml">
+    <Page Include="Views\Controls\General\FileSelectionTextBoxField.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

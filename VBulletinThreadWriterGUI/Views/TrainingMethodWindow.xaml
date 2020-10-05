@@ -1,34 +1,36 @@
 ﻿<Window x:Class="VBulletinThreadWriterGUI.TrainingMethod"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:VBulletinThreadWriterGUI"
+        xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
         xmlns:tmfc="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
         mc:Ignorable="d"
         Title="TrainingMethod" Height="650" Width="450">
     <Grid>
-        <tmfc:NameField Margin="124,0,124,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <StackPanel Orientation="Vertical">
+            <tmfc:NameField HorizontalAlignment="Center"/>
 
-        <tmfc:DescriptionField Margin="124,28,123,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <general:TextBoxField
+                x:Name="DescriptionField" HorizontalAlignment="Center"/>
 
-        <tmfc:VisionSystemField Margin="103,56,103,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <tmfc:VisionSystemField HorizontalAlignment="Center"/>
 
-        <tmfc:CaveatsAndLimitationsField Margin="102,84,102,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <tmfc:CaveatsAndLimitationsField HorizontalAlignment="Center"/>
 
-        <tmfc:AdditionalSettingsField Margin="113,112,113,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <tmfc:AdditionalSettingsField HorizontalAlignment="Center"/>
 
-        <tmfc:WorldGridField Margin="113,224,113,0" VerticalAlignment="Top" HorizontalAlignment="Center" />
+            <tmfc:WorldGridField HorizontalAlignment="Center" />
 
-        <tmfc:MapField Margin="113,312,113,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <tmfc:MapField HorizontalAlignment="Center"/>
 
-        <tmfc:WorldItemsField Margin="184,396,184,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <tmfc:WorldItemsField HorizontalAlignment="Center"/>
 
-        <tmfc:InterfaceItemsField Margin="177,452,177,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <tmfc:InterfaceItemsField HorizontalAlignment="Center"/>
 
-        <tmfc:MachineDataField Margin="113,508,113,0" VerticalAlignment="Top" HorizontalAlignment="Center" />
+            <tmfc:MachineDataField HorizontalAlignment="Center" />
 
-        <Button Content="Save" Margin="206,592,206,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-
+            <Button Content="Save" HorizontalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Window>

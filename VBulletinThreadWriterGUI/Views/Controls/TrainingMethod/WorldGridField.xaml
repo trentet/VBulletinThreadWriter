@@ -5,11 +5,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
              xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
-             mc:Ignorable="d" 
-             d:DesignHeight="84" d:DesignWidth="215">
+             mc:Ignorable="d">
     <Grid>
-        <Label Content="World Grid" HorizontalContentAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="Auto" Height="28"/>
-        <general:TextBoxField Margin="0,28,0,0"/>
-        <general:ImagesField Margin="0,56,0,0"/>
+        <StackPanel>
+            <Label 
+                Content="World Grid" 
+                HorizontalContentAlignment="Center" 
+                Width="215" 
+                Height="28"/>
+            <general:TextBoxField 
+                FieldHeight="28" 
+                FieldTextBoxWidth="150"
+                FieldName="Description" 
+                FieldText=""/>
+            <general:FileSelectionTextBoxField 
+                FieldName="Images"
+                FieldHeight="28"
+                FieldTextBoxWidth="150"
+                FieldButtonWidth="20"
+                FieldButtonText="..."/>
+        </StackPanel>
     </Grid>
 </UserControl>

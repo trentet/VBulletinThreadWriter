@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.General.FileSelectionTextBoxField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
+             mc:Ignorable="d">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Label 
+                x:Name="FieldLabel" 
+                Content="{Binding FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+            <local:FileSelectionTextBox 
+                x:Name="FieldFileSelectionTextBox"
+                FieldHeight="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                FieldTextBoxWidth="{Binding FieldTextBoxWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                FieldTextBoxText="{Binding FieldTextBoxText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                FieldButtonWidth="{Binding FieldButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
+                FieldButtonText="{Binding FieldButtonText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

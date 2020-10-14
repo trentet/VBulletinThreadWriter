@@ -8,6 +8,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Farming() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.FARMING.ToDescription(),
                 new List<Uri> { new Uri("https://i.imgur.com/e4sqLSj.png") },
                 SupportTypes.UNSUPPORTED

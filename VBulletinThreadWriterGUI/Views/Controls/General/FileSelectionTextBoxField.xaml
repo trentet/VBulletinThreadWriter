@@ -5,6 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
              mc:Ignorable="d">
+    <UserControl.DataContext>
+        <local:FileSelectionTextBoxFieldVM/>
+    </UserControl.DataContext>
     <Grid>
         <StackPanel Orientation="Horizontal">
             <Label 

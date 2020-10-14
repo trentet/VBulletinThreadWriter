@@ -8,6 +8,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Melee() : 
             base(
+                Games.OSRS,
                 "Melee", 
                 new List<Uri> 
                 { 

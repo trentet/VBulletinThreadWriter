@@ -7,6 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Smithing() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.SMITHING.ToDescription(),
                 new Uri("https://i.imgur.com/mr9zT2G.png"),
                 SupportTypes.LIMITED_SUPPORT

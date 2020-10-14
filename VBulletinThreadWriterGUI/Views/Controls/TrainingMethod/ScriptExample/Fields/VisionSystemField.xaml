@@ -3,11 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
-             mc:Ignorable="d" 
-             d:DesignHeight="28" d:DesignWidth="216">
+             xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields"
+             mc:Ignorable="d">
     <Grid>
-        <Label Content="Vision System" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Right" Margin="96,0,0,0" VerticalAlignment="Top" Height="28" Width="120"/>
+        <general:ComboBoxField 
+            x:Name="VisionSystemComboBoxField"
+            FieldComboBoxWidth="120"
+            FieldHeight="28"
+            FieldName="Vision System"/>
     </Grid>
 </UserControl>

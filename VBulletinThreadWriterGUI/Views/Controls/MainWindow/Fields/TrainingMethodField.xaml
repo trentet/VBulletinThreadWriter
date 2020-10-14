@@ -1,20 +1,21 @@
-﻿<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields.DescriptionField"
+﻿<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.MainWindow.Fields.TrainingMethodField"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields"
              xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
-             mc:Ignorable="d">
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.MainWindow.Fields"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.DataContext>
-        <local:DescriptionFieldVM/>
+        <local:TrainingMethodFieldVM/>
     </UserControl.DataContext>
     <Grid>
-        <general:TextBoxField
-            x:Name="DescriptionFieldTextBox"
+        <general:ComboBoxField
+            x:Name="TrainingMethodFieldControl" 
+            FieldName="Training Method"
             FieldHeight="28"
-            FieldName="Description"
-            FieldText=""
-            FieldTextBoxWidth="120"/>
+            FieldComboBoxWidth="150"
+            Width="Auto"/>
     </Grid>
 </UserControl>

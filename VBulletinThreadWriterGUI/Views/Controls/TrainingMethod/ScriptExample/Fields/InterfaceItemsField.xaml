@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields"
              mc:Ignorable="d" 
              d:DesignHeight="56" d:DesignWidth="88">
     <Grid>

@@ -7,6 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Herblore() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.HERBLORE.ToDescription(),
                 new Uri("https://i.imgur.com/oobLfZY.png"),
                 SupportTypes.SUPPORTED

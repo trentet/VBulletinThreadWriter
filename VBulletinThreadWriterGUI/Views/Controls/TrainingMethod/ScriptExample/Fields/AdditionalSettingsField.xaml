@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields"
              xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
              mc:Ignorable="d">
-    <Grid Margin="0,0,0,0">
+    <UserControl.DataContext>
+        <local:AdditionalSettingsFieldVM/>
+    </UserControl.DataContext>
+    <Grid>
         <StackPanel>
             <Label 
                 Content="Additional Settings" 
@@ -14,16 +17,18 @@
                 Width="215" 
                 Height="28"/>
             <general:TextBoxField 
-                FieldHeight="28" 
-                FieldTextBoxWidth="150"
+                x:Name="DescriptionTextBoxField"
                 FieldName="Description" 
-                FieldText=""/>
+                FieldHeight="{Binding DescriptionTextBoxFieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"  
+                FieldTextBoxWidth="{Binding DescriptionTextBoxFieldWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"  
+                FieldText="{Binding DescriptionTextBoxFieldText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
             <general:FileSelectionTextBoxField 
+                x:Name="ImagesFileSelectionField"
                 FieldName="Images"
-                FieldHeight="28"
-                FieldTextBoxWidth="150"
-                FieldButtonWidth="20"
-                FieldButtonText="..."/>
+                FieldHeight="{Binding ImagesFileSelectionFieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"  
+                FieldTextBoxWidth="{Binding ImagesFileSelectionFieldWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"  
+                FieldButtonWidth="{Binding ImagesFileSelectionFieldButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"  
+                FieldButtonText="{Binding ImagesFileSelectionFieldButtonText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"  />
         </StackPanel>
     </Grid>
 </UserControl>

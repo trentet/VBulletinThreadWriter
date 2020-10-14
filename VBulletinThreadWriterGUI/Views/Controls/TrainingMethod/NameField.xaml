@@ -6,6 +6,9 @@
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
              xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
              mc:Ignorable="d">
+    <UserControl.DataContext>
+        <local:NameFieldVM/>
+    </UserControl.DataContext>
     <Grid>
         <general:TextBoxField
             x:Name="NameFieldTextBox"

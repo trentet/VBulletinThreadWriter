@@ -3,11 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod"
+             xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields"
              mc:Ignorable="d" 
              d:DesignHeight="28" d:DesignWidth="238">
     <Grid>
-        <Label Content="Caveats/Limitations" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="118,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <general:TextBoxField
+            FieldHeight="28" 
+            FieldTextBoxWidth="120"
+            FieldName="Caveats/Limitations" 
+            FieldText=""/>
     </Grid>
 </UserControl>

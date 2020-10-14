@@ -3,20 +3,57 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample"
              xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
              xmlns:sef="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields"
              mc:Ignorable="d">
+    <UserControl.DataContext>
+        <local:ScriptExampleVM/>
+    </UserControl.DataContext>
     <Grid>
         <StackPanel Orientation="Vertical">
-            <sef:DescriptionField/>
-            <sef:VisionSystemField/>
-            <sef:CaveatsAndLimitationsField/>
-            <sef:AdditionalSettingsField/>
-            <sef:WorldGridField/>
-            <sef:MapField/>
-            <sef:WorldItemsField/>
-            <sef:InterfaceItemsField/>
-            <sef:MachineDataField/>
+            <sef:DescriptionField
+                x:Name="DescriptionFieldView"/>
+            <sef:VisionSystemField
+                x:Name="VisionSystemFieldView"/>
+            <sef:CaveatsAndLimitationsField
+                x:Name="CaveatsAndLimitationsFieldView"/>
+            <sef:AdditionalSettingsField
+                x:Name="AdditionalSettingsFieldView"
+                DescriptionTextBoxFieldHeight="28"
+                DescriptionTextBoxFieldWidth="150"
+                ImagesFileSelectionFieldHeight="28"
+                ImagesFileSelectionFieldWidth="150"
+                ImagesFileSelectionFieldButtonWidth="20"
+                ImagesFileSelectionFieldButtonText="..."/>
+            <sef:WorldGridField
+                x:Name="WorldGridFieldView"
+                DescriptionTextBoxFieldHeight="28"
+                DescriptionTextBoxFieldWidth="150"
+                ImagesFileSelectionFieldHeight="28"
+                ImagesFileSelectionFieldWidth="150"
+                ImagesFileSelectionFieldButtonWidth="20"
+                ImagesFileSelectionFieldButtonText="..."/>
+            <sef:MapField
+                x:Name="MapFieldView"
+                DescriptionTextBoxFieldHeight="28"
+                DescriptionTextBoxFieldWidth="150"
+                ImagesFileSelectionFieldHeight="28"
+                ImagesFileSelectionFieldWidth="150"
+                ImagesFileSelectionFieldButtonWidth="20"
+                ImagesFileSelectionFieldButtonText="..."/>
+            <sef:WorldItemsField
+                x:Name="WorldItemsFieldView"/>
+            <sef:InterfaceItemsField
+                x:Name="InterfaceItemsFieldView"/>
+            <sef:MachineDataField
+                x:Name="MachineDataFieldView"
+                DescriptionTextBoxFieldHeight="28"
+                DescriptionTextBoxFieldWidth="150"
+                ImagesFileSelectionFieldHeight="28"
+                ImagesFileSelectionFieldWidth="150"
+                ImagesFileSelectionFieldButtonWidth="20"
+                ImagesFileSelectionFieldButtonText="..."/>
         </StackPanel>
     </Grid>
 </UserControl>

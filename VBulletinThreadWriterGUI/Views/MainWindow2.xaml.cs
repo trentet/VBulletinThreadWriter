@@ -21,11 +21,11 @@ namespace VBulletinThreadWriterGUI
     /// </summary>
     public partial class MainWindow2 : Window
     {
-        public static ReleaseFieldVM ReleaseFieldVM = new ReleaseFieldVM();
+        //public static ReleaseFieldVM ReleaseFieldVM = new ReleaseFieldVM();
         public MainWindow2()
         {
             InitializeComponent();
-            this.ReleaseField.ViewModel = ReleaseFieldVM;
+            //this.ReleaseField.ViewModel = ReleaseFieldVM;
         }
 
         //private void ComboBox_Loaded(object sender, RoutedEventArgs e)

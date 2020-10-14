@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields;
 
@@ -22,6 +10,32 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample
     /// </summary>
     public partial class ScriptExampleView : UserControl
     {
+        public static readonly DependencyProperty ViewModelProperty
+            = DependencyProperty.Register(
+                  "ViewModel",
+                  typeof(ScriptExampleVM),
+                  typeof(ScriptExampleView),
+                  new PropertyMetadata(new ScriptExampleVM())
+             );
+
+        public ScriptExampleVM ViewModel
+        {
+            get { return (ScriptExampleVM)GetValue(ViewModelProperty); }
+            set
+            {
+                SetValue(ViewModelProperty, value);
+                this.DescriptionFieldView.ViewModel = ViewModel.DescriptionFieldViewModel;
+                //this.VisionSystemFieldView.ViewModel = ViewModel.VisionSystemViewModel;
+                //this.CaveatsAndLimitationsFieldView.ViewModel = ViewModel.CaveatsAndLimitationsFieldViewModel;
+                this.AdditionalSettingsFieldView.ViewModel = ViewModel.AdditionalSettingsFieldViewModel;
+                this.WorldGridFieldView.ViewModel = ViewModel.WorldGridFieldViewModel;
+                this.MapFieldView.ViewModel = ViewModel.MapFieldViewModel;
+                //this.WorldItemsFieldView.ViewModel = ViewModel.WorldItemsFieldViewModel;
+                //this.InterfaceItemsFieldView.ViewModel = ViewModel.InterfaceItemsFieldViewModel;
+                this.MachineDataFieldView.ViewModel = ViewModel.MachineDataFieldViewModel;
+            }
+        }
+
         public ScriptExampleView()
         {
             InitializeComponent();
@@ -58,6 +72,11 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample
         public WorldItemsFieldVM WorldItemsFieldViewModel { get; private set; }
         public InterfaceItemsFieldVM InterfaceItemsFieldViewModel { get; private set; }
         public MachineDataFieldVM MachineDataFieldViewModel { get; private set; }
+
+        public ScriptExampleVM()
+        {
+            this.ScriptExample = new ScriptExampleModel();
+        }
 
         public ScriptExampleVM(ScriptExampleModel scriptExample)
         {

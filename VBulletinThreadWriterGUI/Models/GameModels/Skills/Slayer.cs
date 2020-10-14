@@ -6,6 +6,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Slayer() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.SLAYER.ToDescription(),
                 new Uri("https://i.imgur.com/dO51ekl.png"),
                 SupportTypes.UNKNOWN_SUPPORT

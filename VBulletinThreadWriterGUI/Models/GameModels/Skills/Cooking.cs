@@ -2,8 +2,8 @@
 
 namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
 {
-    public class Cooking : Skill
-    {
+    //public class Cooking : Skill
+    //{
         
-    }
+    //}
 }

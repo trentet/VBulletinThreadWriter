@@ -4,10 +4,13 @@ using System.Windows.Controls;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.General
 {
+    //public interface I
+
+
     /// <summary>
     /// Interaction logic for ComboBoxField.xaml
     /// </summary>
-    public partial class ComboBoxField : UserControl
+    public partial class ComboBoxField : UserControl, IComboBoxField
     {
         /* Start of Custom Properties */
 
@@ -72,7 +75,11 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         public ComboBoxFieldVM ViewModel
         {
             get { return (ComboBoxFieldVM)GetValue(ViewModelProperty); }
-            set { SetValue(ViewModelProperty, value); this.FieldComboBox.DataContext = ViewModel; }
+            set 
+            { 
+                SetValue(ViewModelProperty, value); 
+                this.FieldComboBox.DataContext = ViewModel; 
+            }
         }
 
         /* SelectionChanged Property */
@@ -91,6 +98,24 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
             set { SetValue(FieldComboBoxSelectionChangedProperty, value); this.FieldComboBox.SelectionChanged += FieldComboBoxSelectionChanged; }
         }
 
+        /* DataContextChanged Property */
+
+        public static readonly DependencyProperty FieldDataContextChangedProperty
+            = DependencyProperty.Register(
+                  "FieldDataContextChanged",
+                  typeof(DependencyPropertyChangedEventHandler),
+                  typeof(ComboBoxField),
+                  new PropertyMetadata(null)
+             );
+
+        public DependencyPropertyChangedEventHandler FieldDataContextChanged
+        {
+            get { return (DependencyPropertyChangedEventHandler)GetValue(FieldDataContextChangedProperty); }
+            set { SetValue(FieldDataContextChangedProperty, value); this.FieldComboBox.DataContextChanged += FieldDataContextChanged; }
+        }
+
+        IComboBoxFieldVM IComboBoxField.ViewModel { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
         /* End of Custom Properties */
 
         public ComboBoxField()
@@ -103,44 +128,36 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
             }
         }
 
-        protected void ComboBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        public void ComboBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             LoadLabel(this.FieldLabel);
             LoadComboBox(this.FieldComboBox);
         }
 
-        protected void Label_Loaded(object sender, RoutedEventArgs e)
+        public void Label_Loaded(object sender, RoutedEventArgs e)
         {
             LoadLabel(sender as Label);
         }
 
-        protected void LoadLabel(Label label)
+        public void LoadLabel(Label label)
         {
-            // ... Get the ComboBox reference.
-            //var label = sender as Label;
-
-            // ... Assign the ItemsSource to the List.
             label.Content = ViewModel.LabelName;
         }
 
-        protected void ComboBox_Loaded(object sender, RoutedEventArgs e)
+        public void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
             LoadComboBox(sender as ComboBox);
         }
 
-        protected void LoadComboBox(ComboBox comboBox)
+        public void LoadComboBox(ComboBox comboBox)
         {
-            // ... Get the ComboBox reference.
-            //var comboBox = sender as ComboBox;
-
-            // ... Assign the ItemsSource to the List.
             comboBox.ItemsSource = ViewModel.ItemsSource;
 
             // ... Make the first item selected.
             comboBox.SelectedIndex = 0;
         }
 
-        protected void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // ... Get the ComboBox.
             var comboBox = sender as ComboBox;
@@ -150,7 +167,7 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         }
     }
 
-    public class ComboBoxFieldVM
+    public class ComboBoxFieldVM : IComboBoxFieldVM
     {
         public string LabelName { get; set; }
         public string SelectedItem { get; set; }
@@ -159,15 +176,40 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         public ComboBoxFieldVM()
         {
             this.LabelName = "";
-            this.SelectedItem = "";
             this.ItemsSource = new List<string>();
+            this.SelectedItem = "";
         }
 
-        public ComboBoxFieldVM(string labelName, string selectedItem, List<string> itemsSource)
+        public ComboBoxFieldVM(
+            string labelName, 
+            string selectedItem, 
+            List<string> itemsSource
+        )
         {
             this.LabelName = labelName;
-            this.SelectedItem = selectedItem;
             this.ItemsSource = itemsSource;
+            this.SelectedItem = selectedItem;
         }
+    }
+
+    public interface IComboBoxFieldVM
+    {
+        string LabelName { get; set; }
+        string SelectedItem { get; set; }
+        List<string> ItemsSource { get; set; }
+    }
+
+    public interface IComboBoxField
+    {
+        public int FieldHeight { get; set; }
+        public int FieldComboBoxWidth { get; set; }
+        public string FieldName { get; set; }
+        public IComboBoxFieldVM ViewModel { get; set; }
+        public void ComboBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e);
+        public void Label_Loaded(object sender, RoutedEventArgs e);
+        public void LoadLabel(Label label);
+        public void ComboBox_Loaded(object sender, RoutedEventArgs e);
+        public void LoadComboBox(ComboBox comboBox);
+        public void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e);
     }
 }

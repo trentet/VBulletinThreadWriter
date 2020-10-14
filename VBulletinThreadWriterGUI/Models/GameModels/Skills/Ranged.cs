@@ -7,6 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Ranged() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.RANGED.ToDescription(),
                 new Uri("https://i.imgur.com/1rWs5hR.png"),
                 SupportTypes.LIMITED_SUPPORT

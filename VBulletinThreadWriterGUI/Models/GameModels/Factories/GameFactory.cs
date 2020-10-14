@@ -14,6 +14,25 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Factories
             return games;
         }
 
+        public static List<Game> GetGames(List<Games> gameEnums)
+        {
+            List<Game> games = new List<Game>();
+            foreach(Games gameEnum in gameEnums)
+            {
+                games.Add(GetGame(gameEnum));
+            }
+            return games;
+        }
+
+        public static List<Game> GetGames(IEnumerable<string> gamesAsText)
+        {
+            List<Games> gameEnums = Enum.GetValues(typeof(Games)).Cast<Games>().Where(o => gamesAsText.Contains(o.ToDescription())).ToList();
+
+            List<Game> games = GetGames(gameEnums);
+
+            return games;
+        }
+
         public static Game GetGame(Games game)
         {
             switch (game)
@@ -24,6 +43,13 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Factories
                     throw new NotImplementedException("RS3 has not been implemented. ");
             }
             return null;
+        }
+
+        public static Game GetGame(string gameText)
+        {
+            Game game = GetGames(new List<string>() { gameText }).First();
+
+            return game;
         }
     }
 }

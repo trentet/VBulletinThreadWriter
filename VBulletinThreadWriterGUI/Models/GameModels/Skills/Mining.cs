@@ -7,6 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Mining() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.MINING.ToDescription(),
                 new Uri("https://i.imgur.com/A1TyNpR.png"),
                 SupportTypes.LIMITED_SUPPORT

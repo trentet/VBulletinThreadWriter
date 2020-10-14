@@ -7,6 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Magic() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.MAGIC.ToDescription(),
                 new Uri("https://i.imgur.com/5lOVU3p.png"),
                 SupportTypes.SUPPORTED

@@ -8,7 +8,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
 {
     public class OSRS : Game
     {
-        public OSRS() : base("OSRS", new List<Skill>())
+        public OSRS() : base(Games.OSRS, new List<Skill>())
         {
             this.Skills = new List<Skill>()
             {
@@ -37,7 +37,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
 
         private Skill Agility()
         {
-            Skill agility = new Skill()
+            Skill agility = new Skill(EnumValue)
             {
                 Name = OSRSSkills.OSRSSkillNames.AGILITY.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/OhEiD7d.png") },
@@ -145,7 +145,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
 
         private Skill Construction()
         {
-            Skill construction = new Skill()
+            Skill construction = new Skill(EnumValue)
             {
                 Name = OSRSSkills.OSRSSkillNames.CONSTRUCTION.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/1tISxly.png") },
@@ -199,7 +199,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
 
         private Skill Cooking()
         {
-            Skill cooking = new Skill()
+            Skill cooking = new Skill(EnumValue)
             {
                 Name = OSRSSkills.OSRSSkillNames.COOKING.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/4I46Lf9.png") },
@@ -259,7 +259,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
 
         private Skill Crafting()
         {
-            Skill crafting = new Skill()
+            Skill crafting = new Skill(EnumValue)
             {
                 Name = OSRSSkills.OSRSSkillNames.CRAFTING.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/FZYrvzH.png") },
@@ -353,7 +353,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
 
         private Skill Fletching()
         {
-            Skill fletching = new Skill()
+            Skill fletching = new Skill(EnumValue)
             {
                 Name = OSRSSkills.OSRSSkillNames.FLETCHING.ToDescription(),
                 SkillCapes = new List<Uri> { new Uri("https://i.imgur.com/hKurFob.png") },

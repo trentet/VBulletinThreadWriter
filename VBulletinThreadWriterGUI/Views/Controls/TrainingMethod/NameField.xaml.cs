@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using VBulletinThreadWriterGUI.Models;
+using VBulletinThreadWriterGUI.Views.Controls.General;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
 {
@@ -21,20 +9,103 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
     /// </summary>
     public partial class NameField : UserControl
     {
+        public static readonly DependencyProperty FieldNameProperty
+            = DependencyProperty.Register(
+                  "FieldName",
+                  typeof(string),
+                  typeof(NameField),
+                  new PropertyMetadata("")
+              );
+
+        public string FieldName
+        {
+            get { return (string)GetValue(FieldNameProperty); }
+            set { SetValue(FieldNameProperty, value); }
+        }
+
+        public static readonly DependencyProperty FieldHeightProperty
+            = DependencyProperty.Register(
+                  "FieldHeight",
+                  typeof(int),
+                  typeof(NameField),
+                  new PropertyMetadata(0)
+              );
+
+        public int FieldHeight
+        {
+            get { return (int)GetValue(FieldHeightProperty); }
+            set { SetValue(FieldHeightProperty, value); }
+        }
+
+        public static readonly DependencyProperty FieldTextBoxWidthProperty
+            = DependencyProperty.Register(
+                  "FieldTextBoxWidth",
+                  typeof(int),
+                  typeof(NameField),
+                  new PropertyMetadata(0)
+             );
+
+        public int FieldTextBoxWidth
+        {
+            get { return (int)GetValue(FieldTextBoxWidthProperty); }
+            set { SetValue(FieldTextBoxWidthProperty, value); }
+        }
+
+        public static readonly DependencyProperty FieldTextProperty
+            = DependencyProperty.Register(
+                  "FieldText",
+                  typeof(string),
+                  typeof(NameField),
+                  new PropertyMetadata("")
+             );
+
+        public string FieldText
+        {
+            get { return (string)GetValue(FieldTextProperty); }
+            set { SetValue(FieldTextProperty, value); }
+        }
+
+        /* View Model Property */
+
+        public static readonly DependencyProperty ViewModelProperty
+            = DependencyProperty.Register(
+                  "ViewModel",
+                  typeof(NameFieldVM),
+                  typeof(NameField),
+                  new PropertyMetadata(new NameFieldVM())
+             );
+
+        public NameFieldVM ViewModel
+        {
+            get { return (NameFieldVM)GetValue(ViewModelProperty); }
+            set { SetValue(ViewModelProperty, value); this.DataContext = ViewModel; }
+        }
+
+        protected void NameField_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            this.NameFieldTextBox.FieldName = ViewModel.Name;
+            this.NameFieldTextBox.FieldText = ViewModel.Text;
+        }
+
         public NameField()
         {
             InitializeComponent();
+            this.DataContextChanged += NameField_DataContextChanged;
         }
     }
 
-    public class NameFieldVM
+    public class NameFieldVM : TextBoxFieldVM
     {
-        public TrainingMethodModel TrainingMethodModel { get; set; }
-        public string Name { get => TrainingMethodModel.Name; set => TrainingMethodModel.Name = value; }
+        public string Name { get => base.Text; set => base.Text = value; }
 
-        public NameFieldVM(TrainingMethodModel trainingMethodModel)
+        public NameFieldVM()
         {
-            this.TrainingMethodModel = trainingMethodModel;
+            this.LabelName = "Name";
+        }
+
+        public NameFieldVM(string name) : base("Name", name)
+        {
+            
         }
     }
 }

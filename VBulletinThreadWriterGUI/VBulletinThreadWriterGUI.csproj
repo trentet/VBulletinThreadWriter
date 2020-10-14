@@ -35,6 +35,28 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>8.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -57,73 +79,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="EnumExtensions.cs" />
-    <Compile Include="Models\GameModels\Factories\GameFactory.cs" />
-    <Compile Include="ViewModels\AdditionalSettingsFieldVM.cs" />
-    <Compile Include="ViewModels\CaveatsAndLimitationsFieldVM.cs" />
-    <Compile Include="ViewModels\DescriptionFieldVM.cs" />
-    <Compile Include="ViewModels\InterfaceItemFieldVM.cs" />
-    <Compile Include="ViewModels\InterfaceItemsFieldVM.cs" />
-    <Compile Include="ViewModels\MachineDataFieldVM.cs" />
-    <Compile Include="ViewModels\MapFieldVM.cs" />
-    <Compile Include="ViewModels\NameFieldVM.cs" />
-    <Compile Include="ViewModels\PatchVersionFieldVM.cs" />
-    <Compile Include="ViewModels\ReleaseFieldVM.cs" />
-    <Compile Include="ViewModels\SampleViewModel.cs" />
-    <Compile Include="ViewModels\VisionSystemFieldVM.cs" />
-    <Compile Include="ViewModels\WorldGridFieldVM.cs" />
-    <Compile Include="ViewModels\WorldItemFieldVM.cs" />
-    <Compile Include="ViewModels\WorldItemsFieldVM.cs" />
-    <Compile Include="Views\Controls\General\ComboBoxField.xaml.cs">
-      <DependentUpon>ComboBoxField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\General\FileSelectionTextBox.xaml.cs">
-      <DependentUpon>FileSelectionTextBox.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\General\FileSelectionTextBoxField.xaml.cs">
-      <DependentUpon>FileSelectionTextBoxField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\General\PrefixTextBoxField.xaml.cs">
-      <DependentUpon>PrefixTextBoxField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\General\TextboxField.xaml.cs">
-      <DependentUpon>TextboxField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\ScriptExampleView.xaml.cs">
-      <DependentUpon>ScriptExampleView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\AdditionalSettingsField.xaml.cs">
-      <DependentUpon>AdditionalSettingsField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\CaveatsAndLimitationsField.xaml.cs">
-      <DependentUpon>CaveatsAndLimitationsField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\DescriptionField.xaml.cs">
-      <DependentUpon>DescriptionField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemField.xaml.cs">
-      <DependentUpon>InterfaceItemField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemsField.xaml.cs">
-      <DependentUpon>InterfaceItemsField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MachineDataField.xaml.cs">
-      <DependentUpon>MachineDataField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MapField.xaml.cs">
-      <DependentUpon>MapField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\NameField.xaml.cs">
-      <DependentUpon>NameField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\VisionSystemField.xaml.cs">
-      <DependentUpon>VisionSystemField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldGridField.xaml.cs">
-      <DependentUpon>WorldGridField.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldItemsField.xaml.cs">
-      <DependentUpon>WorldItemsField.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Models\GameModels\OSRS.cs" />
     <Compile Include="Models\GameModels\Skills\Agility.cs" />
     <Compile Include="Models\GameModels\Skills\Construction.cs" />
@@ -158,6 +113,71 @@
     <Compile Include="Models\TrainingMethodModels\Fields\WorldGridSection.cs" />
     <Compile Include="Models\TrainingMethodModels\WorldItem.cs" />
     <Compile Include="Models\TrainingMethodModels\Fields\WorldItemsSection.cs" />
+    <Compile Include="Models\GameModels\Factories\GameFactory.cs" />
+    <Compile Include="ViewModels\SampleViewModel.cs" />
+    <Compile Include="Views\Controls\General\ComboBoxField.xaml.cs">
+      <DependentUpon>ComboBoxField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\General\TextBoxField.xaml.cs">
+      <DependentUpon>TextBoxField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\General\FileSelectionTextBox.xaml.cs">
+      <DependentUpon>FileSelectionTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\General\FileSelectionTextBoxField.xaml.cs">
+      <DependentUpon>FileSelectionTextBoxField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\General\PrefixTextBoxField.xaml.cs">
+      <DependentUpon>PrefixTextBoxField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\MainWindow\Fields\GameField.xaml.cs">
+      <DependentUpon>GameField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\MainWindow\Fields\SkillField.xaml.cs">
+      <DependentUpon>SkillField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\MainWindow\Fields\TrainingMethodField.xaml.cs">
+      <DependentUpon>TrainingMethodField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\MainWindow\MainWindowView.xaml.cs">
+      <DependentUpon>MainWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\NameField.xaml.cs">
+      <DependentUpon>NameField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\AdditionalSettingsField.xaml.cs">
+      <DependentUpon>AdditionalSettingsField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\CaveatsAndLimitationsField.xaml.cs">
+      <DependentUpon>CaveatsAndLimitationsField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\DescriptionField.xaml.cs">
+      <DependentUpon>DescriptionField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemField.xaml.cs">
+      <DependentUpon>InterfaceItemField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\InterfaceItemsField.xaml.cs">
+      <DependentUpon>InterfaceItemsField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MachineDataField.xaml.cs">
+      <DependentUpon>MachineDataField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\MapField.xaml.cs">
+      <DependentUpon>MapField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\ScriptExampleView.xaml.cs">
+      <DependentUpon>ScriptExampleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\VisionSystemField.xaml.cs">
+      <DependentUpon>VisionSystemField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldGridField.xaml.cs">
+      <DependentUpon>WorldGridField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\TrainingMethod\ScriptExample\Fields\WorldItemsField.xaml.cs">
+      <DependentUpon>WorldItemsField.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow2.xaml.cs">
       <DependentUpon>MainWindow2.xaml</DependentUpon>
     </Compile>
@@ -168,6 +188,10 @@
       <DependentUpon>WorldItemField.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Controls\General\ComboBoxField.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Controls\General\TextBoxField.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -183,9 +207,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Controls\General\TextboxField.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Views\Controls\MainWindow\Fields\GameField.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\MainWindow\Fields\SkillField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\MainWindow\Fields\TrainingMethodField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\MainWindow\MainWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Controls\TrainingMethod\ScriptExample\ScriptExampleView.xaml">
       <SubType>Designer</SubType>
@@ -277,6 +313,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

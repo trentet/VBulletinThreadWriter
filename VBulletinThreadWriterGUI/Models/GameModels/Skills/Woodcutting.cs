@@ -1,4 +1,5 @@
 ﻿using System;
+using VBulletinThreadWriterGUI.Models.GameModels.Factories;
 using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
@@ -7,6 +8,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Woodcutting() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.WOODCUTTING.ToDescription(),
                 new Uri("https://i.imgur.com/pBBoLBp.png"),
                 SupportTypes.LIMITED_SUPPORT

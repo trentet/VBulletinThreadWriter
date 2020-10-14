@@ -13,17 +13,20 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
 
     public class Game
     {
+        public Games EnumValue { get; private set; }
         public string Title { get; set; }
         public List<Skill> Skills { get; set; }
 
-        public Game()
+        public Game(Games enumValue)
         {
-
+            this.EnumValue = enumValue;
+            this.Title = this.EnumValue.ToDescription();
         }
         
-        public Game(string title, List<Skill> skills)
+        public Game(Games enumValue, List<Skill> skills)
         {
-            this.Title = title;
+            this.EnumValue = enumValue;
+            this.Title = this.EnumValue.ToDescription();
             this.Skills = skills;
         }
     }

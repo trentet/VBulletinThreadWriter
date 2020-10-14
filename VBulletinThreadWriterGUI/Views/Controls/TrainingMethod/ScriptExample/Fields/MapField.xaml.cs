@@ -20,6 +20,182 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.F
     /// </summary>
     public partial class MapField : UserControl
     {
+        /* Start of DescriptionTextBoxField */
+        public static readonly DependencyProperty DescriptionTextBoxFieldNameProperty
+            = DependencyProperty.Register(
+                  "DescriptionTextBoxFieldName",
+                  typeof(string),
+                  typeof(MapField),
+                  new PropertyMetadata("")
+              );
+
+        public string DescriptionTextBoxFieldName
+        {
+            get { return (string)GetValue(DescriptionTextBoxFieldNameProperty); }
+            set { SetValue(DescriptionTextBoxFieldNameProperty, value); }
+        }
+
+        public static readonly DependencyProperty DescriptionTextBoxFieldHeightProperty
+            = DependencyProperty.Register(
+                  "DescriptionTextBoxFieldHeight",
+                  typeof(int),
+                  typeof(MapField),
+                  new PropertyMetadata(0)
+              );
+
+        public int DescriptionTextBoxFieldHeight
+        {
+            get { return (int)GetValue(DescriptionTextBoxFieldHeightProperty); }
+            set { SetValue(DescriptionTextBoxFieldHeightProperty, value); }
+        }
+
+        public static readonly DependencyProperty DescriptionTextBoxFieldWidthProperty
+            = DependencyProperty.Register(
+                  "DescriptionTextBoxFieldWidth",
+                  typeof(int),
+                  typeof(MapField),
+                  new PropertyMetadata(0)
+             );
+
+        public int DescriptionTextBoxFieldWidth
+        {
+            get { return (int)GetValue(DescriptionTextBoxFieldWidthProperty); }
+            set { SetValue(DescriptionTextBoxFieldWidthProperty, value); }
+        }
+
+        public static readonly DependencyProperty FieldTextBoxTextProperty
+            = DependencyProperty.Register(
+                  "FieldTextBoxText",
+                  typeof(string),
+                  typeof(MapField),
+                  new PropertyMetadata("")
+             );
+
+        public string FieldTextBoxText
+        {
+            get { return (string)GetValue(FieldTextBoxTextProperty); }
+            set { SetValue(FieldTextBoxTextProperty, value); }
+        }
+
+        /* End of DescriptionTextBoxField */
+
+        /* Start of ImagesFileSelectionField */
+        public static readonly DependencyProperty ImagesFileSelectionFieldNameProperty
+            = DependencyProperty.Register(
+                  "ImagesFileSelectionFieldName",
+                  typeof(string),
+                  typeof(MapField),
+                  new PropertyMetadata("")
+             );
+
+        public string ImagesFileSelectionFieldName
+        {
+            get { return (string)GetValue(DescriptionTextBoxFieldNameProperty); }
+            set { SetValue(DescriptionTextBoxFieldNameProperty, value); }
+        }
+
+        /* Field TextBox Text Property */
+
+        public static readonly DependencyProperty ImagesFileSelectionFieldTextProperty
+            = DependencyProperty.Register(
+                  "ImagesFileSelectionFieldText",
+                  typeof(string),
+                  typeof(MapField),
+                  new PropertyMetadata("")
+              );
+
+        public string ImagesFileSelectionFieldText
+        {
+            get { return (string)GetValue(ImagesFileSelectionFieldTextProperty); }
+            set { SetValue(ImagesFileSelectionFieldTextProperty, value); }
+        }
+
+        /* Field Button Text Property */
+
+        public static readonly DependencyProperty ImagesFileSelectionFieldButtonTextProperty
+            = DependencyProperty.Register(
+                  "ImagesFileSelectionFieldButtonText",
+                  typeof(string),
+                  typeof(MapField),
+                  new PropertyMetadata("")
+              );
+
+        public string ImagesFileSelectionFieldButtonText
+        {
+            get { return (string)GetValue(ImagesFileSelectionFieldButtonTextProperty); }
+            set { SetValue(ImagesFileSelectionFieldButtonTextProperty, value); }
+        }
+
+        /* Field Button Width Property */
+
+        public static readonly DependencyProperty ImagesFileSelectionFieldButtonWidthProperty
+            = DependencyProperty.Register(
+                  "ImagesFileSelectionFieldButtonWidth",
+                  typeof(int),
+                  typeof(MapField),
+                  new PropertyMetadata(0)
+              );
+
+        public int ImagesFileSelectionFieldButtonWidth
+        {
+            get { return (int)GetValue(ImagesFileSelectionFieldButtonWidthProperty); }
+            set { SetValue(ImagesFileSelectionFieldButtonWidthProperty, value); }
+        }
+
+        /* Field Height Property */
+
+        public static readonly DependencyProperty ImagesFileSelectionFieldHeightProperty
+            = DependencyProperty.Register(
+                  "ImagesFileSelectionFieldHeight",
+                  typeof(int),
+                  typeof(MapField),
+                  new PropertyMetadata(0)
+              );
+
+        public int ImagesFileSelectionFieldHeight
+        {
+            get { return (int)GetValue(DescriptionTextBoxFieldHeightProperty); }
+            set { SetValue(DescriptionTextBoxFieldHeightProperty, value); }
+        }
+
+        /* Field TextBox Width Property */
+
+        public static readonly DependencyProperty ImagesFileSelectionFieldWidthProperty
+            = DependencyProperty.Register(
+                  "ImagesFileSelectionFieldWidth",
+                  typeof(int),
+                  typeof(MapField),
+                  new PropertyMetadata(0)
+             );
+
+        public int ImagesFileSelectionFieldWidth
+        {
+            get { return (int)GetValue(DescriptionTextBoxFieldWidthProperty); }
+            set { SetValue(DescriptionTextBoxFieldWidthProperty, value); }
+        }
+
+        /* End of MapField */
+
+        /* View Model Property */
+
+        public static readonly DependencyProperty ViewModelProperty
+            = DependencyProperty.Register(
+                  "ViewModel",
+                  typeof(MapFieldVM),
+                  typeof(MapField),
+                  new PropertyMetadata(new MapFieldVM())
+             );
+
+        public MapFieldVM ViewModel
+        {
+            get { return (MapFieldVM)GetValue(ViewModelProperty); }
+            set
+            {
+                SetValue(ViewModelProperty, value);
+                this.DescriptionTextBoxField.DataContext = ViewModel;
+                this.ImagesFileSelectionField.DataContext = ViewModel;
+            }
+        }
         public MapField()
         {
             InitializeComponent();
@@ -34,11 +210,15 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.F
             get => ScriptExample.MapSection.Description;
             set => ScriptExample.MapSection.Description = value;
         }
-
         public string Image
         {
             get => ScriptExample.MapSection.Image != null ? ScriptExample.MapSection.Image.LocalPath : "";
             set => ScriptExample.MapSection.Image = new Uri(value);
+        }
+
+        public MapFieldVM()
+        {
+            this.ScriptExample = new ScriptExampleModel();
         }
 
         public MapFieldVM(ScriptExampleModel scriptExample)

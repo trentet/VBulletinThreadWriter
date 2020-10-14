@@ -7,6 +7,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Firemaking() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.FIREMAKING.ToDescription(),
                 new Uri("https://i.imgur.com/e4sqLSj.png"),
                 SupportTypes.UNSUPPORTED

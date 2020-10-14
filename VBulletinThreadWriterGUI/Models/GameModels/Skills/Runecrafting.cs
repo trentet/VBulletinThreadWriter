@@ -8,6 +8,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels.Skills
     {
         public Runecrafting() :
             base(
+                Games.OSRS,
                 OSRSSkills.OSRSSkillNames.RUNECRAFTING.ToDescription(),
                 new List<Uri> { new Uri("https://i.imgur.com/tE9I9h8.png") },
                 SupportTypes.UNKNOWN_SUPPORT

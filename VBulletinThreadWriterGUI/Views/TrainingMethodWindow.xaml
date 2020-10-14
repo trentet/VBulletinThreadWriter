@@ -9,9 +9,13 @@
         mc:Ignorable="d"
         Title="TrainingMethod" Height="650" Width="450">
     <Grid>
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-            <trainingMethod:NameField/>
-            <scriptExample:ScriptExampleView/>
+        <StackPanel Orientation="Vertical">
+            <trainingMethod:NameField 
+                x:Name="NameFieldControl"
+                FieldHeight="28"
+                FieldTextBoxWidth="120"/>
+            <scriptExample:ScriptExampleView
+                x:Name="ScriptExampleViewControl"/>
             <Button Content="Save"/>
         </StackPanel>
     </Grid>

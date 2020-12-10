@@ -1,96 +1,58 @@
-﻿using System.Windows;
-using System.Windows.Controls;
-using VBulletinThreadWriterGUI.Views.Controls.General;
+﻿using System;
+using System.Windows;
+using VBulletinThreadWriterGUI.Views.Controls.General.Bases;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
 {
     /// <summary>
     /// Interaction logic for NameField.xaml
     /// </summary>
-    public partial class NameField : UserControl
+    public partial class NameField : TextBoxFieldBaseControl
     {
-        public static readonly DependencyProperty FieldNameProperty
-            = DependencyProperty.Register(
-                  "FieldName",
-                  typeof(string),
-                  typeof(NameField),
-                  new PropertyMetadata("")
-              );
+        public static readonly DependencyProperty 
+            FieldNameProperty = DependencyProperty.Register(
+            "FieldName", typeof(string), typeof(NameField), new PropertyMetadata(""));
 
-        public string FieldName
-        {
-            get { return (string)GetValue(FieldNameProperty); }
-            set { SetValue(FieldNameProperty, value); }
-        }
+        public static readonly DependencyProperty
+            FieldLabelWidthProperty = DependencyProperty.Register(
+            "FieldLabelWidth", typeof(double), typeof(NameField), new PropertyMetadata(Double.NaN));
 
-        public static readonly DependencyProperty FieldHeightProperty
-            = DependencyProperty.Register(
-                  "FieldHeight",
-                  typeof(int),
-                  typeof(NameField),
-                  new PropertyMetadata(0)
-              );
+        public static readonly DependencyProperty 
+            FieldHeightProperty = DependencyProperty.Register(
+            "FieldHeight", typeof(double), typeof(NameField), new PropertyMetadata(Double.NaN));
 
-        public int FieldHeight
-        {
-            get { return (int)GetValue(FieldHeightProperty); }
-            set { SetValue(FieldHeightProperty, value); }
-        }
+        public static readonly DependencyProperty 
+            FieldTextBoxWidthProperty = DependencyProperty.Register(
+            "FieldTextBoxWidth", typeof(double), typeof(NameField), new PropertyMetadata(Double.NaN));
 
-        public static readonly DependencyProperty FieldTextBoxWidthProperty
-            = DependencyProperty.Register(
-                  "FieldTextBoxWidth",
-                  typeof(int),
-                  typeof(NameField),
-                  new PropertyMetadata(0)
-             );
+        public static readonly DependencyProperty 
+            FieldTextProperty = DependencyProperty.Register(
+            "FieldText", typeof(string), typeof(NameField), new PropertyMetadata(""));
 
-        public int FieldTextBoxWidth
-        {
-            get { return (int)GetValue(FieldTextBoxWidthProperty); }
-            set { SetValue(FieldTextBoxWidthProperty, value); }
-        }
+        public static readonly DependencyProperty 
+            ViewModelProperty = DependencyProperty.Register(
+            "ViewModel", typeof(NameFieldVM), typeof(NameField), new PropertyMetadata(new NameFieldVM()));
 
-        public static readonly DependencyProperty FieldTextProperty
-            = DependencyProperty.Register(
-                  "FieldText",
-                  typeof(string),
-                  typeof(NameField),
-                  new PropertyMetadata("")
-             );
-
-        public string FieldText
-        {
-            get { return (string)GetValue(FieldTextProperty); }
-            set { SetValue(FieldTextProperty, value); }
-        }
-
-        /* View Model Property */
-
-        public static readonly DependencyProperty ViewModelProperty
-            = DependencyProperty.Register(
-                  "ViewModel",
-                  typeof(NameFieldVM),
-                  typeof(NameField),
-                  new PropertyMetadata(new NameFieldVM())
-             );
+        public override TextBoxFieldVM TextBoxFieldViewModel { get => this.ViewModel; }
 
         public NameFieldVM ViewModel
         {
             get { return (NameFieldVM)GetValue(ViewModelProperty); }
-            set { SetValue(ViewModelProperty, value); this.DataContext = ViewModel; }
+            set 
+            { 
+                SetValue(ViewModelProperty, value); 
+                this.DataContext = ViewModel; 
+            }
         }
 
-        protected void NameField_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-            this.NameFieldTextBox.FieldName = ViewModel.Name;
-            this.NameFieldTextBox.FieldText = ViewModel.Text;
-        }
-
-        public NameField()
+        public NameField() : base(typeof(NameField))
         {
             InitializeComponent();
-            this.DataContextChanged += NameField_DataContextChanged;
+            this.DependencyObjectControl = this;
+            this.FieldLabel = this.FieldLabelControl;
+            this.FieldLabel.Loaded += Label_Loaded;
+            this.FieldTextBox = this.FieldTextBoxControl;
+            this.FieldTextBox.Loaded += TextBox_Loaded;
         }
     }
 
@@ -98,14 +60,8 @@ namespace VBulletinThreadWriterGUI.Views.Controls.TrainingMethod
     {
         public string Name { get => base.Text; set => base.Text = value; }
 
-        public NameFieldVM()
-        {
-            this.LabelName = "Name";
-        }
+        public NameFieldVM() : base("Name", "") { }
 
-        public NameFieldVM(string name) : base("Name", name)
-        {
-            
-        }
+        public NameFieldVM(string name) : base("Name", name) { }
     }
 }

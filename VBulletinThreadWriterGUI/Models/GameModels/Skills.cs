@@ -7,6 +7,8 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
     {
         public enum OSRSSkillNames
         {
+            [Description("Test")]
+            TEST,
             [Description("Agility")]
             AGILITY,
             [Description("Melee")]
@@ -52,6 +54,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         public static List<string> SkillList =
             new List<string>
             {
+                OSRSSkillNames.TEST.ToDescription(),
                 OSRSSkillNames.AGILITY.ToDescription(),
                 OSRSSkillNames.MELEE.ToDescription(),
                 OSRSSkillNames.CONSTRUCTION.ToDescription(),

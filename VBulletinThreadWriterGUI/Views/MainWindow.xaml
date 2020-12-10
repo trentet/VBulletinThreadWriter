@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VBulletinThreadWriterGUI"
-        xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
+        xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General.Bases"
         xmlns:mw="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Width="275" Height="150">

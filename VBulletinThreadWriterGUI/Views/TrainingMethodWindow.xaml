@@ -13,7 +13,8 @@
             <trainingMethod:NameField 
                 x:Name="NameFieldControl"
                 FieldHeight="28"
-                FieldTextBoxWidth="120"/>
+                FieldTextBoxWidth="120"
+                FieldText="Test1"/>
             <scriptExample:ScriptExampleView
                 x:Name="ScriptExampleViewControl"/>
             <Button Content="Save"/>

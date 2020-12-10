@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using VBulletinThreadWriterGUI.Models.TrainingMethodModels;
-using VBulletinThreadWriterGUI.Models;
 using VBulletinThreadWriterGUI.Models.TrainingMethodModels.Fields;
+using VBulletinThreadWriterGUI.Models.GameModels.Skills;
 
 namespace VBulletinThreadWriterGUI.Models.GameModels
 {
@@ -12,6 +12,7 @@ namespace VBulletinThreadWriterGUI.Models.GameModels
         {
             this.Skills = new List<Skill>()
             {
+                new Test(),
                 Agility(),
                 Construction(),
                 Cooking(),

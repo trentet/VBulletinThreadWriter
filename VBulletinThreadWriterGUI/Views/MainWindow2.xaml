@@ -3,11 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
+        xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General.Bases"
         mc:Ignorable="d"
         Title="MainWindow" Height="150" Width="300">
     <Grid>
-        <StackPanel Orientation="Vertical">
+        <!--<StackPanel Orientation="Vertical">
         <general:ComboBoxField
             x:Name="ReleaseField" 
             VerticalAlignment="Top" 
@@ -23,6 +23,6 @@
             FieldHeight="28"
             FieldTextBoxWidth="150"
             Width="Auto"/>
-        </StackPanel>
+        </StackPanel>-->
     </Grid>
 </Window>

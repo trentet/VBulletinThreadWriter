@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -40,28 +41,28 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         public static readonly DependencyProperty FieldHeightProperty
             = DependencyProperty.Register(
                   "FieldHeight",
-                  typeof(int),
+                  typeof(double),
                   typeof(PrefixTextBoxField),
-                  new PropertyMetadata(0)
+                  new PropertyMetadata(Double.NaN)
               );
 
-        public int FieldHeight
+        public double FieldHeight
         {
-            get { return (int)GetValue(FieldHeightProperty); }
+            get { return (double)GetValue(FieldHeightProperty); }
             set { SetValue(FieldHeightProperty, value); }
         }
 
         public static readonly DependencyProperty FieldTextBoxWidthProperty
             = DependencyProperty.Register(
                   "FieldTextBoxWidth",
-                  typeof(int),
+                  typeof(double),
                   typeof(PrefixTextBoxField),
-                  new PropertyMetadata(0)
+                  new PropertyMetadata(Double.NaN)
              );
               
-        public int FieldTextBoxWidth
+        public double FieldTextBoxWidth
         {
-            get { return (int)GetValue(FieldTextBoxWidthProperty); }
+            get { return (double)GetValue(FieldTextBoxWidthProperty); }
             set { SetValue(FieldTextBoxWidthProperty, value); }
         }
 

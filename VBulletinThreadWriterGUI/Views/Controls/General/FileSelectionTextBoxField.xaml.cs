@@ -1,17 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.General
 {
@@ -75,14 +65,14 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         public static readonly DependencyProperty FieldButtonWidthProperty
             = DependencyProperty.Register(
                   "FieldButtonWidth",
-                  typeof(int),
+                  typeof(double),
                   typeof(FileSelectionTextBoxField),
-                  new PropertyMetadata(0)
+                  new PropertyMetadata(Double.NaN)
               );
 
-        public int FieldButtonWidth
+        public double FieldButtonWidth
         {
-            get { return (int)GetValue(FieldButtonWidthProperty); }
+            get { return (double)GetValue(FieldButtonWidthProperty); }
             set { SetValue(FieldButtonWidthProperty, value); }
         }
 
@@ -91,14 +81,14 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         public static readonly DependencyProperty FieldHeightProperty
             = DependencyProperty.Register(
                   "FieldHeight",
-                  typeof(int),
+                  typeof(double),
                   typeof(FileSelectionTextBoxField),
-                  new PropertyMetadata(0)
+                  new PropertyMetadata(Double.NaN)
               );
 
-        public int FieldHeight
+        public double FieldHeight
         {
-            get { return (int)GetValue(FieldHeightProperty); }
+            get { return (double)GetValue(FieldHeightProperty); }
             set { SetValue(FieldHeightProperty, value); }
         }
 
@@ -107,14 +97,14 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         public static readonly DependencyProperty FieldTextBoxWidthProperty
             = DependencyProperty.Register(
                   "FieldTextBoxWidth",
-                  typeof(int),
+                  typeof(double),
                   typeof(FileSelectionTextBoxField),
-                  new PropertyMetadata(0)
+                  new PropertyMetadata(Double.NaN)
              );
 
-        public int FieldTextBoxWidth
+        public double FieldTextBoxWidth
         {
-            get { return (int)GetValue(FieldTextBoxWidthProperty); }
+            get { return (double)GetValue(FieldTextBoxWidthProperty); }
             set { SetValue(FieldTextBoxWidthProperty, value); }
         }
 
@@ -129,7 +119,11 @@ namespace VBulletinThreadWriterGUI.Views.Controls.General
         public FileSelectionTextBoxFieldVM ViewModel
         {
             get { return (FileSelectionTextBoxFieldVM)GetValue(ViewModelProperty); }
-            set { SetValue(ViewModelProperty, value); this.FieldFileSelectionTextBox.DataContext = ViewModel; }
+            set 
+            { 
+                SetValue(ViewModelProperty, value); 
+                //this.FieldFileSelectionTextBox.DataContext = ViewModel; 
+            }
         }
 
         private void TextBox_DataContextChanged(object sender, RoutedEventArgs e)

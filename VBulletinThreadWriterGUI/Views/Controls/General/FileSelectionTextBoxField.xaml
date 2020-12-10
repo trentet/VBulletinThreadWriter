@@ -11,16 +11,20 @@
     <Grid>
         <StackPanel Orientation="Horizontal">
             <Label 
-                x:Name="FieldLabel" 
+                x:Name="FieldLabelControl" 
                 Content="{Binding FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
                 Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
-            <local:FileSelectionTextBox 
-                x:Name="FieldFileSelectionTextBox"
-                FieldHeight="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                FieldTextBoxWidth="{Binding FieldTextBoxWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                FieldTextBoxText="{Binding FieldTextBoxText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                FieldButtonWidth="{Binding FieldButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                FieldButtonText="{Binding FieldButtonText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" />
+            <TextBox 
+                x:Name="FieldTextBoxControl"
+                Text="{Binding FieldTextBoxText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                Width="{Binding FieldTextBoxWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                TextWrapping="Wrap" />
+            <Button 
+                x:Name="FieldButtonControl"
+                Content="{Binding FieldButtonText, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                Width="{Binding FieldButtonWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
         </StackPanel>
     </Grid>
 </UserControl>

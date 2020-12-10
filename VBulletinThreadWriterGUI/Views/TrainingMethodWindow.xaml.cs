@@ -2,7 +2,7 @@
 using VBulletinThreadWriterGUI.Models;
 using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod;
 using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample;
-using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields;
+using VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.ViewFields;
 
 namespace VBulletinThreadWriterGUI
 {
@@ -13,26 +13,26 @@ namespace VBulletinThreadWriterGUI
     {
         /* View Model Property */
 
-        public static readonly DependencyProperty ViewModelProperty
-            = DependencyProperty.Register(
-                  "ViewModel",
-                  typeof(TrainingMethodVM),
-                  typeof(TrainingMethodWindow),
-                  new PropertyMetadata(new TrainingMethodVM())
-             );
+        public static readonly DependencyProperty 
+            ViewModelProperty = DependencyProperty.Register(
+            "ViewModel", typeof(TrainingMethodVM), typeof(TrainingMethodWindow), new PropertyMetadata(new TrainingMethodVM()));
 
-        public DescriptionFieldVM ViewModel
+        public TrainingMethodVM TrainingMethodViewModel
         {
-            get { return (DescriptionFieldVM)GetValue(ViewModelProperty); }
-            set { SetValue(ViewModelProperty, value); this.DataContext = ViewModel; }
+            get { return (TrainingMethodVM)GetValue(ViewModelProperty); }
+            set 
+            { 
+                SetValue(ViewModelProperty, value); 
+                this.DataContext = TrainingMethodViewModel; 
+            }
         }
 
-        protected void TrainingMethodWindow_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        public void TrainingMethodWindow_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            ReloadVM();
+            Reload();
         }
 
-        public static TrainingMethodVM TrainingMethodVM;
+        //public static TrainingMethodVM TrainingMethodVM;
         public TrainingMethodModel trainingMethodModel;
         public TrainingMethodModel TrainingMethodModel 
         {
@@ -40,15 +40,15 @@ namespace VBulletinThreadWriterGUI
             set 
             {
                 trainingMethodModel = value;
-                TrainingMethodVM = new TrainingMethodVM(trainingMethodModel);
-                ReloadVM();
+                TrainingMethodViewModel = new TrainingMethodVM(trainingMethodModel);
+                Reload();
             }
         }
 
-        public void ReloadVM()
+        public void Reload()
         {
-            this.NameFieldControl.ViewModel = TrainingMethodVM.NameFieldViewModel;
-            this.ScriptExampleViewControl.ViewModel = TrainingMethodVM.ScriptExampleViewModel;
+            this.NameFieldControl.ViewModel = TrainingMethodViewModel.NameFieldViewModel;
+            this.ScriptExampleViewControl.ViewModel = TrainingMethodViewModel.ScriptExampleViewModel;
         }
 
         public TrainingMethodWindow()

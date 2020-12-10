@@ -3,7 +3,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using VBulletinThreadWriterGUI.Models.GameModels.Factories;
-using VBulletinThreadWriterGUI.Views.Controls.MainWindow.Fields;
+using VBulletinThreadWriterGUI.Views.Controls.MainWindow.ViewFields;
 
 namespace VBulletinThreadWriterGUI.Views.Controls.MainWindow
 {
@@ -17,9 +17,9 @@ namespace VBulletinThreadWriterGUI.Views.Controls.MainWindow
         {
             InitializeComponent();
             this.DataContextChanged += MainWindowView_DataContextChanged;
-            this.GameFieldControl.FieldComboBoxSelectionChanged += GameField_SelectionChanged;
-            this.SkillFieldControl.FieldComboBoxSelectionChanged += SkillField_SelectionChanged;
-            this.TrainingMethodFieldControl.FieldComboBoxSelectionChanged += TrainingMethodField_SelectionChanged;
+            this.GameFieldControl.FieldComboBox.SelectionChanged += GameField_SelectionChanged;
+            this.SkillFieldControl.FieldComboBox.SelectionChanged += SkillField_SelectionChanged;
+            this.TrainingMethodFieldControl.FieldComboBox.SelectionChanged += TrainingMethodField_SelectionChanged;
             this.ViewModel = new MainWindowVM();
         }
 
@@ -45,10 +45,6 @@ namespace VBulletinThreadWriterGUI.Views.Controls.MainWindow
 
         public void ReloadViewModels()
         {
-            //this.GameFieldControl.ViewModel = new GameFieldVM();
-            //this.SkillFieldControl.ViewModel = new SkillFieldVM();
-            //this.TrainingMethodFieldControl.ViewModel = new TrainingMethodFieldVM();
-
             this.GameFieldControl.ViewModel = this.ViewModel.GameFieldViewModel;
             this.SkillFieldControl.ViewModel = this.ViewModel.SkillFieldViewModel;
             this.TrainingMethodFieldControl.ViewModel = this.ViewModel.TrainingMethodFieldViewModel;
@@ -83,7 +79,8 @@ namespace VBulletinThreadWriterGUI.Views.Controls.MainWindow
                 :
                 this.ViewModel.GameFieldViewModel.GamesItemSource.Where(o => o.Title.Equals(comboBox.SelectedItem as string)).First();
 
-            this.GameFieldControl.ReloadViewModel();
+            this.SkillFieldControl.Reload();//ViewModel = this.ViewModel.SkillFieldViewModel;
+            //this.TrainingMethodFieldControl.ViewModel = this.ViewModel.TrainingMethodFieldViewModel;
         }
 
         public void SkillField_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -103,7 +100,7 @@ namespace VBulletinThreadWriterGUI.Views.Controls.MainWindow
 
             this.ViewModel.TrainingMethodFieldViewModel.ParentSkill = ViewModel.SkillFieldViewModel.SelectedSkill;
 
-            this.TrainingMethodFieldControl.ReloadViewModel();
+            this.TrainingMethodFieldControl.Reload();//ViewModel = this.ViewModel.TrainingMethodFieldViewModel;
         }
 
         public void TrainingMethodField_SelectionChanged(object sender, SelectionChangedEventArgs e)

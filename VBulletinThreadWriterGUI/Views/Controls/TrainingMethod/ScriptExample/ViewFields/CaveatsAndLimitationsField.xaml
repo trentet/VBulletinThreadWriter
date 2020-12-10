@@ -1,21 +1,21 @@
 ﻿<viewbase:TextBoxFieldBaseControl 
-        x:Class="VBulletinThreadWriterGUI.Views.Controls.General.TextBoxField"
+        x:Class="VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.ViewFields.CaveatsAndLimitationsField"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:viewbase="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General.Bases"
+        xmlns:view="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.ViewFields"
         mc:Ignorable="d">
-    <!--<UserControl.DataContext>
-        <viewbase:TextBoxFieldVM/>
-    </UserControl.DataContext>-->
+    <UserControl.DataContext>
+        <view:CaveatsAndLimitationsFieldVM/>
+    </UserControl.DataContext>
     <Grid>
         <StackPanel Orientation="Horizontal" Width="Auto">
             <Label 
                 x:Name="FieldLabelControl" 
                 Content="{Binding FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                Width="Auto"/>
+                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
             <TextBox 
                 x:Name="FieldTextBoxControl"
                 Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"

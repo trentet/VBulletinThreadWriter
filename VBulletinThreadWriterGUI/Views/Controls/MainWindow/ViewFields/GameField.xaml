@@ -1,14 +1,14 @@
-﻿<viewbase:ComboBoxFieldBaseControl 
-        x:Class="VBulletinThreadWriterGUI.Views.Controls.General.ComboBoxField"
+﻿<viewbase:ComboBoxFieldBaseControl  
+    x:Class="VBulletinThreadWriterGUI.Views.Controls.MainWindow.ViewFields.GameField"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:viewbase="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General.Bases"
         mc:Ignorable="d">
-    <!--<UserControl.DataContext>
+    <UserControl.DataContext>
         <viewbase:ComboBoxFieldVM/>
-    </UserControl.DataContext>-->
+    </UserControl.DataContext>
     <Grid>
         <StackPanel Orientation="Horizontal" Width="Auto">
             <Label 
@@ -24,28 +24,23 @@
         </StackPanel>
     </Grid>
 </viewbase:ComboBoxFieldBaseControl>
-    <!--<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.General.ComboBoxField"
+    <!--<UserControl x:Class="VBulletinThreadWriterGUI.Views.Controls.MainWindow.ViewFields.GameField"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General.Bases"
+             xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General.Bases"
+             xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.MainWindow.ViewFields"
              mc:Ignorable="d">
     <UserControl.DataContext>
-        <local:ComboBoxFieldVM/>
+        <local:GameFieldVM/>
     </UserControl.DataContext>
     <Grid>
-        <StackPanel Orientation="Horizontal">
-            <Label 
-                x:Name="FieldLabelControl" 
-                Content="{Binding FieldName, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" 
-                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
-            <ComboBox 
-                x:Name="FieldComboBoxControl"
-                Height="{Binding FieldHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                Width="{Binding FieldComboBoxWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-                ItemsSource="{Binding ItemsSource}" 
-                SelectedItem="{Binding SelectedItem, Mode=TwoWay}"/>
-        </StackPanel>
+        <general:ComboBoxField
+            x:Name="GameFieldControl"
+            FieldName="Game"
+            FieldHeight="28"
+            FieldComboBoxWidth="150"
+            Width="Auto"/>
     </Grid>
 </UserControl>-->

@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample"
-             xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General"
-             xmlns:sef="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.Fields"
+             xmlns:general="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.General.Bases"
+             xmlns:sef="clr-namespace:VBulletinThreadWriterGUI.Views.Controls.TrainingMethod.ScriptExample.ViewFields"
              mc:Ignorable="d">
     <UserControl.DataContext>
         <local:ScriptExampleVM/>
@@ -13,19 +13,15 @@
     <Grid>
         <StackPanel Orientation="Vertical">
             <sef:DescriptionField
-                x:Name="DescriptionFieldView"/>
+                x:Name="DescriptionFieldView"
+                FieldHeight="28"
+                FieldTextBoxWidth="120"/>
             <sef:VisionSystemField
                 x:Name="VisionSystemFieldView"/>
             <sef:CaveatsAndLimitationsField
                 x:Name="CaveatsAndLimitationsFieldView"/>
             <sef:AdditionalSettingsField
-                x:Name="AdditionalSettingsFieldView"
-                DescriptionTextBoxFieldHeight="28"
-                DescriptionTextBoxFieldWidth="150"
-                ImagesFileSelectionFieldHeight="28"
-                ImagesFileSelectionFieldWidth="150"
-                ImagesFileSelectionFieldButtonWidth="20"
-                ImagesFileSelectionFieldButtonText="..."/>
+                x:Name="AdditionalSettingsFieldView"/>
             <sef:WorldGridField
                 x:Name="WorldGridFieldView"
                 DescriptionTextBoxFieldHeight="28"
